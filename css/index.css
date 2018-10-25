@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/ProximaNova-Regular.otf')  format('opentype'),
+	     url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf')  format('truetype'), url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/ProximaNova-Bold.otf')  format('opentype'),
+	     url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf')  format('truetype'), url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNovaCond';
+  src: url('../fonts/ProximaNovaCond-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/ProximaNovaCond-Regular.otf')  format('opentype'),
+	     url('../fonts/ProximaNovaCond-Regular.woff') format('woff'), url('../fonts/ProximaNovaCond-Regular.ttf')  format('truetype'), url('../fonts/ProximaNovaCond-Regular.svg#ProximaNovaCond-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNovaCond';
+  src: url('../fonts/ProximaNovaCond-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/ProximaNovaCond-Bold.otf')  format('opentype'),
+	     url('../fonts/ProximaNovaCond-Bold.woff') format('woff'), url('../fonts/ProximaNovaCond-Bold.ttf')  format('truetype'), url('../fonts/ProximaNovaCond-Bold.svg#ProximaNovaCond-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNovaCond';
+  src: url('../fonts/ProximaNovaCond-Black.eot?#iefix') format('embedded-opentype'),  url('../fonts/ProximaNovaCond-Black.otf')  format('opentype'), url('../fonts/ProximaNovaCond-Black.woff') format('woff'), url('../fonts/ProximaNovaCond-Black.ttf')  format('truetype'), url('../fonts/ProximaNovaCond-Black.svg#ProximaNovaCond-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNovaExCn';
+  src: url('../fonts/ProximaNovaExCn-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/ProximaNovaExCn-Regular.otf')  format('opentype'),
+	     url('../fonts/ProximaNovaExCn-Regular.woff') format('woff'), url('../fonts/ProximaNovaExCn-Regular.ttf')  format('truetype'), url('../fonts/ProximaNovaExCn-Regular.svg#ProximaNovaExCn-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNovaExCn';
+  src: url('../fonts/ProximaNovaExCn-Semibold.eot?#iefix') format('embedded-opentype'),  url('../fonts/ProximaNovaExCn-Semibold.otf')  format('opentype'),
+	     url('../fonts/ProximaNovaExCn-Semibold.woff') format('woff'), url('../fonts/ProximaNovaExCn-Semibold.ttf')  format('truetype'), url('../fonts/ProximaNovaExCn-Semibold.svg#ProximaNovaExCn-Semibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNovaExCn';
+  src: url('../fonts/ProximaNovaExCn-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/ProximaNovaExCn-Bold.otf')  format('opentype'),
+	     url('../fonts/ProximaNovaExCn-Bold.woff') format('woff'), url('../fonts/ProximaNovaExCn-Bold.ttf')  format('truetype'), url('../fonts/ProximaNovaExCn-Bold.svg#ProximaNovaExCn-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body{
+    background: #f7f7f7;
+	margin:0;
+	padding: 0;
+	font-family: 'ProximaNova', sans-serif;
+	font-size: 15px;
+    font-weight: 400;
+	line-height:1.4;
+    letter-spacing: 0.05em;
+    color: rgb(0, 0, 74);
+	min-width: 360px;
+}
+
+button,input,select,textarea{
+    font-family: 'ProximaNova'; 
+    font-size: 20px;
+}
+
+.wrapper {
+    max-width:1200px;
+    padding:0 40px;
+    margin:0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex_end {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+/*header*/
+
+header {
+    box-sizing: border-box; 
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+}
+
+header .logo-line {
+    background: rgb(0,0,76);
+    width: 260px;
+}
+
+.logo {
+    display: block;
+    background: url(../images/logo.png);
+    width: 140px;
+    height: 110px;
+}
+
+header .phones-and-menu {
+    flex: 1;
+}
+
+header .phones-line {
+    padding: 13px 0;
+}
+
+.button {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 74);
+    border-radius: 3px;
+    background: rgb(0,0,76);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2),inset 0px 2px 0px 0px rgba(255, 255, 255, 0.35);
+    width: 248px;
+    height: 48px;
+    line-height: 48px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    font: 700 19px "ProximaNovaCond";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header .phone {
+    margin-left: 35px;
+}
+
+.phone__number {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 74);
+    text-decoration: none;
+}
+
+.phone__info {
+    font-size: 13px;
+    color: rgb(98, 98, 98);
+}
+
+header .menu-line {
+    box-sizing: border-box;
+    border-top: 1px solid rgb(196, 196, 196);
+}
+
+header .menu {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+header .menu li {
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+header .menu a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 0, 74);
+    text-decoration: none;
+    padding: 25px 10px;
+}
+
+header .menu li:last-child a {
+    color: rgb(53, 72, 254);
+    text-decoration: underline;
+}
+
+header .submenu {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 52px;
+    left: 0;
+    display: none;
+}
+
+header .menu li:hover .submenu {
+    display: block;
+}
+
+header .submenu li {
+    position: relative;
+    transition: all .2s linear 0s;
+}
+
+header .submenu li a {
+    position: relative;
+    background-color: #ffffff;
+    width: 90px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 0, 74);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
