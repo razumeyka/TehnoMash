@@ -139,11 +139,11 @@ header .phones-line {
     border: 1px solid rgb(0, 0, 74);
     border-radius: 3px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2),inset 0px 2px 0px 0px rgba(255, 255, 255, 0.35);
-    height: 48px;
+    height: 50px;
     cursor: pointer;
     text-decoration: none;
     outline: none;
-    font: 700 19px/48px "ProximaNovaCond";
+    font: 700 19px/50px "ProximaNovaCond";
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     text-align: center;
@@ -349,7 +349,10 @@ h1 {
 }
 
 .advantages__icon {
-    background: url(../images/sprites.svg) no-repeat -353px -167px;
+    background: url(../images/sprites.svg) no-repeat -346px -160px, linear-gradient( 90deg, rgb(227,227,227) 0%, rgb(255,255,255) 23%, rgb(255,255,255) 100%);
+    background: url(../images/sprites.svg) no-repeat -346px -160px, -moz-linear-gradient( 90deg, rgb(227,227,227) 0%, rgb(255,255,255) 23%, rgb(255,255,255) 100%);
+    background: url(../images/sprites.svg) no-repeat -346px -160px, -webkit-linear-gradient( 90deg, rgb(227,227,227) 0%, rgb(255,255,255) 23%, rgb(255,255,255) 100%);
+    background: url(../images/sprites.svg) no-repeat -346px -160px, -ms-linear-gradient( 90deg, rgb(227,227,227) 0%, rgb(255,255,255) 23%, rgb(255,255,255) 100%);
     width:90px;
     height:90px;
     box-sizing: border-box;
@@ -359,15 +362,15 @@ h1 {
 }
 
 .advantages__advantage_staff .advantages__icon {
-    background-position: -15px -167px;
+    background-position: -8px -160px;
 }
 
 .advantages__advantage_project .advantages__icon {
-    background-position: -244px -167px;
+    background-position: -233px -158px;
 }
 
 .advantages__advantage_no-markup .advantages__icon {
-    background-position: -127px -169px;
+    background-position: -119px -159px;
 }
 
 .advantages__text {
