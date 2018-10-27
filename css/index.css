@@ -113,6 +113,7 @@ header .logo-line {
     background: rgb(0,0,74);
     background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
     width: 325px;
+    padding: 10px 0;
 }
 
 .logo {
@@ -120,6 +121,7 @@ header .logo-line {
     background: url(../images/logo.png);
     width: 150px;
     height: 110px;
+    margin-left: 37px;
 }
 
 header .phones-and-menu {
@@ -433,11 +435,32 @@ h1 {
 
 .steps {
     background: rgb(0, 0, 74);
+    background: radial-gradient(rgb(0, 0, 74), rgb(9, 9, 186));
     padding: 68px 0 82px;
+    position: relative;
+    overflow: hidden;
 }
 
 .steps .wrapper {
     max-width: 940px;
+}
+
+.steps__background {
+    background: url(../images/boiler-bg.png) no-repeat;
+    width: 670px;
+    height: 670px;
+    position: absolute;
+}
+
+.steps__background_right {
+    bottom: -5px;
+    right: -143px;
+}
+
+.steps__background_left {
+    top: 54px;
+    left: -538px;
+    background-position: right top;
 }
 
 .steps h3 {
@@ -528,6 +551,7 @@ h1 {
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 20px;
     margin-top: 30px;
+    position: relative;
 }
 
 .form {
@@ -575,8 +599,6 @@ h1 {
 }
 
 .form__button {
-    border: none;
-    box-shadow: none;
     height: 70px;
     width: 100%;
     position: relative;
@@ -587,7 +609,7 @@ h1 {
     content: "";
     background: url(../images/sprites.svg) no-repeat -406px -1px;
     width: 70px;
-    height: 70px;
+    height: 69px;
     border-right: 1px solid rgb(66, 66, 161);
     position: absolute;
     left: 0;
@@ -626,7 +648,7 @@ h1 {
 .documents-screen__photo {
     background: url(../images/cert-mainpage.png) no-repeat center top;
     background-size: 830px;
-    width: 53%;
+    width: 51%;
     height: 645px;
 }
 
@@ -656,10 +678,60 @@ h1 {
     left: 0;
 }
 
+.information__button {
+    height: 60px;
+    padding: 0 31px;
+    line-height: 60px;
+}
+
 /*partners*/
 
 .partners {
-    height: 200px;
+    background: #ffffff;
+    padding: 20px 0;
+}
+
+.partners__wrapper {
+    margin: 0 -15px;
+}
+
+.partners__partner-wr {
+    box-sizing: border-box;
+    width: 14.28%;
+    padding: 0 15px;
+}
+
+.partners__partner {
+    width: 130;
+    height: 130px;
+}
+
+.partners__partner_1 {
+    background: url(../images/partner-1.jpg) no-repeat;
+}
+
+.partners__partner_2 {
+    background: url(../images/partner-1.jpg) no-repeat;
+}
+
+.partners__partner_3 {
+    background: url(../images/partner-1.jpg) no-repeat;
+}
+
+.partners__partner_4 {
+    background: url(../images/partner-1.jpg) no-repeat;
+}
+
+.partners__partner_5 {
+    background: url(../images/partner-1.jpg) no-repeat;
+}
+
+.partners__partner_6 {
+    background: url(../images/partner-1.jpg) no-repeat;
+}
+
+.partners__partner_7 {
+    background: url(../images/partner-1.jpg) no-repeat;
 }
 
 /*footer*/
@@ -668,6 +740,11 @@ footer .first-footer {
     background: rgb(0,0,74);
     background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
     padding: 28px 0;
+    border-bottom: 1px solid rgb(255,255,255);
+}
+
+.logo_footer {
+    margin: 0;
 }
 
 .contacts__column {
