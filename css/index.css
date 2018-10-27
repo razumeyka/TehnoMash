@@ -110,14 +110,15 @@ header {
 }
 
 header .logo-line {
-    background: rgb(0,0,76);
-    width: 260px;
+    background: rgb(0,0,74);
+    background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
+    width: 325px;
 }
 
 .logo {
     display: block;
     background: url(../images/logo.png);
-    width: 140px;
+    width: 150px;
     height: 110px;
 }
 
@@ -131,10 +132,8 @@ header .phones-line {
 
 .button {
     display: inline-block;
+    background: rgb(0,0,74);
     background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
-    background-image: -moz-linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
     box-sizing: border-box;
     border: 1px solid rgb(0, 0, 74);
     border-radius: 3px;
@@ -147,11 +146,11 @@ header .phones-line {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 45px;
 }
 
 header .phone {
-    margin-left: 35px;
+    margin: auto 0 auto 40px;
 }
 
 .phone__number {
@@ -159,6 +158,7 @@ header .phone {
     font-weight: bold;
     color: rgb(0, 0, 74);
     text-decoration: none;
+    line-height: 1;
 }
 
 .phone__info {
@@ -189,19 +189,20 @@ header .menu a {
     font-weight: 700;
     color: rgb(0, 0, 74);
     text-decoration: none;
-    padding: 25px 10px;
+    padding: 14px 20px;
 }
 
 header .menu>li:last-child a {
     color: rgb(53, 72, 254);
     text-decoration: underline;
+    padding: 14px 0 14px 20px;
 }
 
 header .submenu {
     position: absolute;
     margin: 0;
     padding: 0;
-    top: 52px;
+    top: 56px;
     left: 0;
     display: none;
 }
@@ -218,7 +219,7 @@ header .submenu li {
 header .submenu li a {
     position: relative;
     background-color: #ffffff;
-    width: 90px;
+    width: 140px;
     font-size: 20px;
     font-weight: 700;
     color: rgb(0, 0, 74);
@@ -232,7 +233,7 @@ header .submenu li a {
 .main-screen {
     background: url(../images/slide-1.jpg) no-repeat center;
     background-size: cover;
-    padding: 150px 0 230px;
+    padding: 130px 0 225px;
     font: 70 36px "ProximaNovaCond";
     color: rgb(255, 255, 255);
     text-align: center;
@@ -242,8 +243,10 @@ h1 {
     font: 700 66px "ProximaNovaCond";
     color: rgb(255, 255, 255);
     text-align: center;
-    margin: 0;
+    margin: 0 0 5px;
 }
+
+/*products*/
 
 .products {
     display: flex;
@@ -251,18 +254,39 @@ h1 {
     box-sizing: border-box;
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
     border:1px solid rgba(255, 255, 255, 0.4);
-    margin-top: -300px;
 }
 
 .products__boiler {
     width: 25%;
     box-sizing: border-box;
     border-right:1px solid rgba(255, 255, 255, 0.4);
-    background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%)
-    background-image: -moz-linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
-    padding: 50px 30px;
+    padding: 35px 30px 30px;
+    text-decoration: none;
+}
+
+.products__boiler_water {
+    background: rgb(0,0,74);
+    background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
+}
+
+.products__boiler_condensing {
+    background: rgb(0,0,74);
+    background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
+}
+
+.products__boiler_steam-water {
+    background: rgb(0,0,74);
+    background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
+}
+
+.products__boiler_thermal {
+    background: rgb(0,0,74);
+    background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
+}
+
+.products__boiler_outdoor {
+    background: rgb(0,0,74);
+    background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
 }
 
 .products__boiler:last-child {
@@ -271,8 +295,8 @@ h1 {
 
 .products__icon {
     background: #ffffff;
-    width: 80px;
-    height: 65px;
+    width: 85px;
+    height: 80px;
     margin: 0 auto 20px;
 }
 
@@ -281,6 +305,7 @@ h1 {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     text-align: center;
+    line-height: 1.5;
 }
 
 /*plant-screen*/
@@ -289,6 +314,7 @@ h1 {
     background: url(../images/map_block_bg.jpg) no-repeat center;
     background-size: cover;
     padding: 180px 0 30px;
+    overflow: hidden;
 }
 
 .plant-screen .wrapper {
@@ -296,7 +322,12 @@ h1 {
 }
 
 .plant-screen__info {
+    flex: 1;
     max-width: 500px;
+}
+
+.plant-screen__information {
+    margin-bottom: 40px;
 }
 
 .information {
@@ -307,17 +338,19 @@ h1 {
 .information__caption {
     font-size: 48px;
     font-weight: 700;
+    margin-bottom: 25px;
 }
 
 .information__description {
     font-size: 20px;
     color: rgb(0, 0, 0);
+    line-height: 1.5;
 }
 
 .figures__item {
     box-sizing: border-box;
     border-left: 7px solid rgb(233, 19, 19);
-    padding-left: 25px;
+    padding-left: 28px;
     margin-bottom: 60px;
 }
 
@@ -328,10 +361,13 @@ h1 {
 .figures__description {
     font-size: 18px;
     color: rgb(0, 0, 0);
+    margin: 5px 0;
+    line-height: 1.5;
 }
 
 .advantages {
-    
+    flex: 1;
+    margin: auto -10px 0;
 }
 
 .advantages__map {
@@ -339,20 +375,30 @@ h1 {
     width: 1000px;
     height: 600px;
     position: absolute;
-    bottom: 0;
-    right: -100px;
+    bottom: 150px;
+    right: -210px;
 }
 
 .advantages__advantage {
-    width: 25%;
     position: relative;
+    box-sizing: border-box;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.advantages__advantage_delivery::before {
+    content: "";
+    background: url(../images/sprites.svg) no-repeat -493px -8px;
+	width: 134px;
+	height: 235px; 
+    position: absolute;
+    right: -6px;
+    bottom: 94px;
 }
 
 .advantages__icon {
-    background: url(../images/sprites.svg) no-repeat -346px -160px, linear-gradient( 90deg, rgb(227,227,227) 0%, rgb(255,255,255) 23%, rgb(255,255,255) 100%);
-    background: url(../images/sprites.svg) no-repeat -346px -160px, -moz-linear-gradient( 90deg, rgb(227,227,227) 0%, rgb(255,255,255) 23%, rgb(255,255,255) 100%);
-    background: url(../images/sprites.svg) no-repeat -346px -160px, -webkit-linear-gradient( 90deg, rgb(227,227,227) 0%, rgb(255,255,255) 23%, rgb(255,255,255) 100%);
-    background: url(../images/sprites.svg) no-repeat -346px -160px, -ms-linear-gradient( 90deg, rgb(227,227,227) 0%, rgb(255,255,255) 23%, rgb(255,255,255) 100%);
+    background: rgb(255,255,255);
+    background: url(../images/sprites.svg) no-repeat -346px -160px, linear-gradient( 0deg, rgb(227,227,227) 0%, rgb(255,255,255) 23%, rgb(255,255,255) 100%);
     width:90px;
     height:90px;
     box-sizing: border-box;
@@ -362,15 +408,15 @@ h1 {
 }
 
 .advantages__advantage_staff .advantages__icon {
-    background-position: -8px -160px;
+    background-position: -8px -160px, 0 0;
 }
 
 .advantages__advantage_project .advantages__icon {
-    background-position: -233px -158px;
+    background-position: -233px -158px, 0 0;
 }
 
 .advantages__advantage_no-markup .advantages__icon {
-    background-position: -119px -159px;
+    background-position: -119px -159px, 0 0;
 }
 
 .advantages__text {
@@ -383,12 +429,11 @@ h1 {
     color: rgb(233, 19, 19);
 }
 
-
 /*steps*/
 
 .steps {
     background: rgb(0, 0, 74);
-    padding: 80px 0;
+    padding: 68px 0 82px;
 }
 
 .steps .wrapper {
@@ -398,21 +443,29 @@ h1 {
 .steps h3 {
     font: 700 48px "ProximaNova";
     color: rgb(255, 255, 255);
+    margin: 0 0 28px;
+}
+
+.steps__wrapper {
+    max-width: 900px;
+    margin: 0 -25px;
 }
 
 .steps__group {
     width: 50%;
+    box-sizing: border-box;
+    padding: 0 25px;
     position: relative;
 }
 
 .steps__group::before {
     content: "";
-    background: url(../images/sprites.svg) no-repeat -326px -10px;
+    background: url(../images/sprites.svg) no-repeat -324px -8px;
 	width: 56px;
 	height: 122px;
     position: absolute;
-    left: -60px;
-    top: 23px;
+    left: -37px;
+    top: 18px;
 }
 
 .steps__number {
@@ -425,6 +478,7 @@ h1 {
 .steps__text {
     font-size: 20px;
     color: rgb(255, 255, 255);
+    line-height: 1.3;
     margin: auto 0;
     flex: 1;
 }
@@ -435,18 +489,20 @@ h1 {
 
 .steps__illustrated {
     width: 50%;
+    box-sizing: border-box;
+    padding: 0 25px;
     justify-content: center;
 }
 
 .steps__icon {
-    background: url(../images/sprites.svg) no-repeat -164px -22px;
+    background: url(../images/sprites.svg) no-repeat -162px -20px;
     width: 99px;
 	height: 98px;
     margin: auto 0;
 }
 
-.steps__icon_delivery {
-    background: url(../images/sprites.svg) no-repeat -10px -33px;
+.steps__illustrated_delivery .steps__icon {
+    background: url(../images/sprites.svg) no-repeat -8px -31px;
     width: 114px;
 	height: 76px;
 }
@@ -471,13 +527,14 @@ h1 {
     background-color: rgb(250, 250, 250);
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 20px;
+    margin-top: 30px;
 }
 
 .form {
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 50px 30px;
+    padding: 20px 30px 30px;
     position: relative;
 }
 
@@ -486,13 +543,14 @@ h1 {
     color: rgb(0, 0, 74);
     font-weight: 700;
     text-align: center;
+    margin-bottom: 23px;
 }
 
 .form .wpcf7-form-control-wrap {
     display: block;
     box-sizing: border-box;
     width: 50%;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 .form .wpcf7-form-control {
@@ -502,14 +560,14 @@ h1 {
     border-radius: 3px;
     background-color: rgb(237, 237, 237);
     box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.09);
-    height: 68px;
+    height: 70px;
     width: 100%;
     font-size: 22px;
     color: rgb(112, 112, 112);
     font-weight: bold;
     text-transform: uppercase;
     outline: none;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 .form input:not([type=submit]):focus {
@@ -522,17 +580,18 @@ h1 {
     height: 70px;
     width: 100%;
     position: relative;
-    padding-left: 65px;
+    padding: 0 0 0 75px;
 }
 
 .form__button::before {
     content: "";
-    background: url(../images/sprites.svg) no-repeat -415px -10px;
-	width: 55px;
-	height: 54px;
+    background: url(../images/sprites.svg) no-repeat -406px -1px;
+    width: 70px;
+    height: 70px;
+    border-right: 1px solid rgb(66, 66, 161);
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: 0;
+    top: 0;
 }
 
 .button__text1 {
@@ -548,6 +607,7 @@ h1 {
 
 .documents-screen {
     background-color: rgb(236, 236, 236);
+    overflow: hidden;
 }
 
 .documents-screen .wrapper {
@@ -559,14 +619,23 @@ h1 {
     width: 600px;
     height: 600px;
     position: absolute;
-    right: -40px;
-    bottom: 0;
+    right: -154px;
+    bottom: -72px;
 }
 
 .documents-screen__photo {
-    background: url(../images/cert-mainpage.png);
-    width: 700px;
-    height: 700px;
+    background: url(../images/cert-mainpage.png) no-repeat center top;
+    background-size: 830px;
+    width: 53%;
+    height: 645px;
+}
+
+.documents-screen__information {
+    padding: 65px 0 0 20px
+}
+
+.information__documents {
+    margin: 27px 0 38px;
 }
 
 .documents__document {
@@ -574,14 +643,13 @@ h1 {
     font-size: 20px;
     font-weight: 700;
     color: rgb(0, 0, 74);
-    text-decoration: none;
-    padding-left: 40px;
+    padding: 11px 0 11px 47px;
     position: relative;
 }
 
 .documents__document::before {
     content: "";
-    background: url(../images/sprites.svg) no-repeat -415px -74px;
+    background: url(../images/sprites.svg) no-repeat -413px -72px;;
 	width: 29px;
 	height: 29px;
     position: absolute;
@@ -596,19 +664,62 @@ h1 {
 
 /*footer*/
 
-footer .first-line {
+footer .first-footer {
+    background: rgb(0,0,74);
     background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
-    background-image: -moz-linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
+    padding: 28px 0;
 }
 
-footer .second-line {
+.contacts__column {
+    margin: auto 0;
+    max-width: 259px;
+}
+
+.contacts__number {
+    display: block;
+    font-size: 22px;
+    line-height: 1.6;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contacts__call-order {
+    display: block;
+    font-size: 20px;
+    color: rgb(73, 89, 255);
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.contacts__line {
+    background: rgb(234, 235, 235);
+    width: 1px;
+    height: 121px;
+    margin: 0 35px;
+}
+
+.contacts__mail {
+    display: block;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.contacts__address {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+
+footer .second-footer {
     background: rgb(0, 0, 46);
 }
 
 footer .menu {
     display: block;
+    height: 60px;
     padding: 0;
     margin: 0;
 }
@@ -619,13 +730,44 @@ footer .menu li {
     position: relative;
 }
 
+footer .menu li:before {
+    content: "";
+    background-color: rgb(255, 255, 255);
+    width: 2px;
+    height: 18px;
+    position: absolute;
+    right: 0;
+    top: 22px;
+}
+
+footer .menu li:last-child:before {
+    display: none;
+}
+
 footer .menu a {
     display: inline-block;
     font-size: 18px;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    padding: 25px 10px;
+    padding: 19px 18px;
 }
+
+footer .menu li:first-child a {
+    padding: 19px 18px 19px 0;
+} 
+
+.third-footer {
+    background: rgb(0, 0, 46);
+    border-top: 1px solid rgb(32, 32, 104);
+    padding: 10px 0;
+    font-size: 15px;
+    color: rgb(186, 186, 186);
+}
+
+.third-footer a {
+    color: rgb(186, 186, 186);
+}
+
 
 
 
