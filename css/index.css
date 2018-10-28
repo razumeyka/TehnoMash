@@ -391,29 +391,47 @@ h1 {
 .advantages__advantage {
     position: relative;
     box-sizing: border-box;
-    width: 25%;
     padding: 0 10px;
+    width: 25%;
 }
 
 .advantages__advantage_delivery::before {
     content: "";
     background: url(../images/sprites.svg) no-repeat -493px -8px;
-	width: 134px;
-	height: 235px; 
+	width: 0;
+	height: 0; 
     position: absolute;
     right: -1px;
     bottom: 54px;
+    -webkit-transition: all 2s linear 500ms;
+    -moz-transition: all 2s linear 500ms;
+    -o-transition: all 2s linear 500ms;
+    transition: all 2s linear 200ms;
+}
+
+.advantages__advantage_visible::before {
+    width: 134px;
+	height: 235px; 
 }
 
 .advantages__icon {
     background: rgb(255,255,255);
     background: url(../images/sprites.svg) no-repeat -346px -160px, linear-gradient( 0deg, rgb(227,227,227) 0%, rgb(255,255,255) 23%, rgb(255,255,255) 100%);
-    width:90px;
-    height:90px;
+    width:0;
+    height:0;
     box-sizing: border-box;
     border: 4px solid rgb(0, 0, 74);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
     margin: 0 auto 17px;
+    -webkit-transition: all 2s linear 500ms;
+    -moz-transition: all 2s linear 500ms;
+    -o-transition: all 2s linear 500ms;
+    transition: all 2s linear 200ms;
+}
+
+.advantages__icon_visible {
+    width:90px;
+    height:90px;
 }
 
 .advantages__advantage_staff .advantages__icon {
@@ -498,6 +516,15 @@ h1 {
     position: absolute;
     left: -37px;
     top: 18px;
+    -webkit-transition: all 2s linear 300ms;
+    -moz-transition: all 2s linear 300ms;
+    -o-transition: all 2s linear 300ms;
+    transition: all 2s linear 300ms;
+    opacity: 0;
+}
+
+.steps__group_visible::before {
+    opacity: 1;
 }
 
 .steps__number {
@@ -531,6 +558,15 @@ h1 {
     width: 99px;
 	height: 98px;
     margin: auto 0;
+    -webkit-transition: all 2s linear 700ms;
+    -moz-transition: all 2s linear 700ms;
+    -o-transition: all 2s linear 700ms;
+    transition: all 2s linear 700ms;
+    opacity: 0;
+}
+
+.steps__icon_visible {
+    opacity: 1;
 }
 
 .steps__illustrated_delivery .steps__icon {
@@ -655,7 +691,8 @@ h1 {
 }
 
 .documents-screen__photo {
-    background: url(../images/cert-mainpage.png) no-repeat center -15px;
+    background: url(../images/cert-mainpage.png) no-repeat center top;
+    background-size: 100% auto;
     width: 51%;
 }
 
