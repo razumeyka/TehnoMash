@@ -124,11 +124,11 @@ header .logo-line {
     margin-left: 37px;
 }
 
-header .phones-and-menu {
+header .phones-menu {
     flex: 1;
 }
 
-header .phones-line {
+header .phones {
     padding: 13px 0;
 }
 
@@ -241,7 +241,7 @@ header .submenu li a {
     text-align: center;
 }
 
-h1 {
+.main-screen__caption {
     font: 700 66px "ProximaNovaCond";
     color: rgb(255, 255, 255);
     text-align: center;
@@ -251,17 +251,20 @@ h1 {
 /*products*/
 
 .products {
+    margin-top: -109px;
+}
+
+.products__inner {
     display: flex;
     flex-wrap: nowrap;
     box-sizing: border-box;
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
     border:1px solid rgba(255, 255, 255, 0.4);
-    margin-top: -109px;
     position: relative;
     z-index: 1;
 }
 
-.products__boiler {
+.products__item {
     width: 20%;
     box-sizing: border-box;
     border-right:1px solid rgba(255, 255, 255, 0.4);
@@ -269,32 +272,32 @@ h1 {
     text-decoration: none;
 }
 
-.products__boiler_water {
+.products__item_water {
     background: rgb(0,0,74);
     background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
 }
 
-.products__boiler_condensing {
+.products__item_condensing {
     background: rgb(0,0,74);
     background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
 }
 
-.products__boiler_steam-water {
+.products__item_steam-water {
     background: rgb(0,0,74);
     background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
 }
 
-.products__boiler_thermal {
+.products__item_thermal {
     background: rgb(0,0,74);
     background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
 }
 
-.products__boiler_outdoor {
+.products__item_outdoor {
     background: rgb(0,0,74);
     background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
 }
 
-.products__boiler:last-child {
+.products__item:last-child {
     border: none;
 }
 
@@ -497,7 +500,6 @@ h1 {
 }
 
 .steps__wrapper {
-    max-width: 900px;
     margin: 0 -25px;
 }
 
