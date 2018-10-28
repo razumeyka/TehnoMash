@@ -256,6 +256,9 @@ h1 {
     box-sizing: border-box;
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
     border:1px solid rgba(255, 255, 255, 0.4);
+    margin-top: -109px;
+    position: relative;
+    z-index: 1;
 }
 
 .products__boiler {
@@ -315,7 +318,8 @@ h1 {
 .plant-screen {
     background: url(../images/map_block_bg.jpg) no-repeat center;
     background-size: cover;
-    padding: 180px 0 30px;
+    padding: 170px 0 85px;
+    margin-top: -105px;
     overflow: hidden;
 }
 
@@ -325,7 +329,6 @@ h1 {
 
 .plant-screen__info {
     flex: 1;
-    max-width: 500px;
 }
 
 .plant-screen__information {
@@ -356,6 +359,10 @@ h1 {
     margin-bottom: 60px;
 }
 
+.figures__item:last-child {
+    margin: 0;
+}
+
 .figures__figure {
     font: 700 48px "ProximaNovaCond";
 }
@@ -367,9 +374,9 @@ h1 {
     line-height: 1.5;
 }
 
-.advantages {
-    flex: 1;
-    margin: auto -10px 0;
+.plant-screen__advantages {
+    width: 700px;
+    margin: auto 0 0;
 }
 
 .advantages__map {
@@ -377,8 +384,8 @@ h1 {
     width: 1000px;
     height: 600px;
     position: absolute;
-    bottom: 150px;
-    right: -210px;
+    bottom: 80px;
+    right: -200px;
 }
 
 .advantages__advantage {
@@ -394,8 +401,8 @@ h1 {
 	width: 134px;
 	height: 235px; 
     position: absolute;
-    right: -6px;
-    bottom: 94px;
+    right: -1px;
+    bottom: 54px;
 }
 
 .advantages__icon {
@@ -406,7 +413,7 @@ h1 {
     box-sizing: border-box;
     border: 4px solid rgb(0, 0, 74);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
-    margin: 0 auto;
+    margin: 0 auto 17px;
 }
 
 .advantages__advantage_staff .advantages__icon {
@@ -425,6 +432,8 @@ h1 {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
 }
 
 .advantages__text span {
@@ -646,14 +655,13 @@ h1 {
 }
 
 .documents-screen__photo {
-    background: url(../images/cert-mainpage.png) no-repeat center top;
+    background: url(../images/cert-mainpage.png) no-repeat center -15px;
     background-size: 830px;
     width: 51%;
-    height: 645px;
 }
 
 .documents-screen__information {
-    padding: 65px 0 0 20px
+    padding: 65px 0 80px 20px;
 }
 
 .information__documents {
@@ -702,8 +710,10 @@ h1 {
 }
 
 .partners__partner {
-    width: 130;
+    display: block;
+    width: 130px;
     height: 130px;
+    margin: 0 auto;
 }
 
 .partners__partner_1 {
@@ -732,6 +742,10 @@ h1 {
 
 .partners__partner_7 {
     background: url(../images/partner-1.jpg) no-repeat;
+}
+
+.partners__partner:hover {
+    background-position: center bottom;
 }
 
 /*footer*/
@@ -789,16 +803,15 @@ footer .first-footer {
     color: rgb(255, 255, 255);
 }
 
-
 footer .second-footer {
     background: rgb(0, 0, 46);
 }
 
 footer .menu {
     display: block;
-    height: 60px;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 footer .menu li {
