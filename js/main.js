@@ -15,8 +15,8 @@ $(document).ready(function(){
 		offset: 10
 	});
     
-    $('.advantages__advantage_delivery').viewportChecker({
-		classToAdd: 'advantages__advantage_visible',
+    $('.advantages__ray').viewportChecker({
+		classToAdd: 'advantages__ray_visible',
 		offset: 10
 	});
     
