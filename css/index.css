@@ -112,6 +112,7 @@ header {
 
 header .logo-bg {
     background: rgb(0,0,74);
+    background-image: linear-gradient( 0deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
     width: calc((100% - 1200px) /2 + 245px);
     height: 133px;
     position: absolute;
@@ -121,19 +122,17 @@ header .logo-bg {
 
 header .line {
     background: rgb(196, 196, 196);
-    width: 100%;
     height: 1px;
     position: absolute;
     top: 75px;
+    right: 0;
+    left: 0;
 }
 
 header .logo-line {
-    background: rgb(0,0,74);
-    background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
     padding: 10px 0;
     position: relative;
     z-index: 2;
-    width: 248px;
 }
 
 .logo {
@@ -154,7 +153,7 @@ header .phones {
 .button {
     display: inline-block;
     background: rgb(0,0,74);
-    background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
+    background-image: linear-gradient( 0deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
     box-sizing: border-box;
     border: 1px solid rgb(0, 0, 74);
     border-radius: 3px;
@@ -214,25 +213,26 @@ header .menu>li:last-child a {
     padding: 14px 0 14px 20px;
 }
 
-header .submenu {
+header .sub-menu {
     position: absolute;
     margin: 0;
     padding: 0;
     top: 56px;
     left: 0;
     display: none;
+    z-index: 3;
 }
 
-header .menu li:hover .submenu {
+header .menu li:hover .sub-menu {
     display: block;
 }
 
-header .submenu li {
+header .sub-menu li {
     position: relative;
     transition: all .2s linear 0s;
 }
 
-header .submenu li a {
+header .sub-menu li a {
     position: relative;
     background-color: #ffffff;
     width: 140px;
@@ -244,23 +244,75 @@ header .submenu li a {
     padding: 10px;
 }
 
-/*main-screen*/
-
-.main-screen__small-caption {
-    font: 70 36px "ProximaNovaCond";
-    color: rgb(255, 255, 255);
-    text-align: center;
-    position: relative;
-    z-index: 1000;
+.burger {
+    display: none;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    cursor: pointer;
 }
 
-.main-screen__caption {
+.burger span, .burger span::before, .burger span::after {
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 4px;
+    width: 36px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    transition: all 200ms ease-in-out;
+}
+
+.burger span::before {
+    content: '';
+    left: 0;
+}
+
+.burger span::after {
+    content: '';
+    left: 0;
+    top: 20px;
+}
+
+.burger_active span {
+    background-color: transparent;
+}
+    
+ .burger_active span::before  {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+ .burger_active span::after  {
+    transform: rotate(-45deg);
+    top: 8px;
+} 
+
+/*slider*/
+
+.kenburn-slider .caption {
     font: 700 66px "ProximaNovaCond";
     color: rgb(255, 255, 255);
     text-align: center;
     margin: 130px 0 5px;
     position: relative;
     z-index: 1000;
+    padding: 0 15px;
+}
+
+.kenburn-slider .small-caption {
+    font: 70 36px "ProximaNovaCond";
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+    padding: 0 15px;
 }
 
 .kenburn-slider {
@@ -304,9 +356,15 @@ header .submenu li a {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
-    100% {
+    
+    80% {
         -webkit-transform: scale(1.3);
         transform: scale(1.3);
+    }
+    
+    100% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
     }
 }
 
@@ -319,7 +377,7 @@ header .submenu li a {
 .products {
     margin-top: -109px;
     position: relative;
-    z-index: 1000;
+    z-index: 2;
 }
 
 .products__inner {
@@ -342,27 +400,27 @@ header .submenu li a {
 
 .products__item_water {
     background: rgb(0,0,74);
-    background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
+    background-image: linear-gradient( 0deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
 }
 
 .products__item_condensing {
     background: rgb(0,0,74);
-    background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
+    background-image: linear-gradient( 0deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
 }
 
 .products__item_steam-water {
     background: rgb(0,0,74);
-    background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
+    background-image: linear-gradient( 0deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
 }
 
 .products__item_thermal {
     background: rgb(0,0,74);
-    background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
+    background-image: linear-gradient( 0deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
 }
 
 .products__item_outdoor {
     background: rgb(0,0,74);
-    background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
+    background-image: linear-gradient( 0deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
 }
 
 .products__item:last-child {
@@ -386,30 +444,25 @@ header .submenu li a {
 
 /*plant-screen*/
 
-.plant-screen {
+.plant {
     background: url(../images/map_block_bg.jpg) no-repeat center;
     background-size: cover;
-    padding: 170px 0 85px;
+    padding: 130px 0 85px;
     margin-top: -105px;
     overflow: hidden;
 }
 
-.plant-screen .wrapper {
+.plant .wrapper {
     position: relative;
 }
 
-.plant-screen__info {
+.plant__info {
     flex: 1;
     max-width: 500px;
 }
 
-.plant-screen__information {
+.plant__information {
     margin-bottom: 40px;
-}
-
-.information {
-    flex: 1;
-    position: relative;
 }
 
 .information__caption {
@@ -446,13 +499,13 @@ header .submenu li a {
     line-height: 1.5;
 }
 
-.plant-screen__advantages {
+.plant__advantages {
     margin: auto 0 0;
-    position: relative;
 }
 
 .advantages {
     width: 700px;
+    position: relative;
 }
 
 .advantages__map {
@@ -477,7 +530,7 @@ header .submenu li a {
     right: 0;
 }
 
-.advantages__advantage_delivery.advantages__advantage_visible .advantages__icon {
+.advantages_visible .advantages__advantage_delivery  .advantages__icon {
 	transform: translate(-40px, 150px);
 }
 
@@ -495,7 +548,7 @@ header .submenu li a {
     transition: all 2s linear 200ms;
 }
 
-.advantages__advantage_visible .advantages__ray {
+.advantages_visible .advantages__ray {
     width: 134px;
 	height: 235px;
 	transform: translate(-40px, 150px);
@@ -516,7 +569,7 @@ header .submenu li a {
     transition: all 2s linear 200ms;
 }
 
-.advantages__advantage_visible .advantages__icon {
+.advantages_visible .advantages__icon {
     width:90px;
     height:90px;
 }
@@ -554,41 +607,43 @@ header .submenu li a {
 
 .steps {
     background: rgb(0, 0, 74);
-    background: radial-gradient(rgb(0, 0, 74), rgb(9, 9, 186));
     padding: 68px 0 82px;
     position: relative;
     overflow: hidden;
 }
 
-.steps .wrapper {
+.steps__wrapper {
     max-width: 940px;
+    padding: 0 40px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .steps__background {
-    background: url(../images/boiler-bg.png) no-repeat;
+    background: url(../images/boiler-bg.png) no-repeat,     radial-gradient(rgb(16, 13, 87), rgb(0, 0, 74));
     width: 670px;
     height: 670px;
     position: absolute;
 }
 
 .steps__background_right {
-    bottom: -5px;
-    right: -143px;
+    bottom: -172px;
+    right: -156px;
 }
 
 .steps__background_left {
-    top: 54px;
-    left: -538px;
+    top: -12px;
+    left: -703px;
     background-position: right top;
 }
 
-.steps h2 {
+.steps__caption {
     font: 700 48px "ProximaNova";
     color: rgb(255, 255, 255);
-    margin: 0 0 28px;
+    margin: 0 0 42px;
 }
 
-.steps__wrapper {
+.steps__inner {
     margin: 0 -25px;
 }
 
@@ -614,8 +669,12 @@ header .submenu li a {
     opacity: 0;
 }
 
-.steps__group_visible::before {
+.steps_visible .steps__group::before {
     opacity: 1;
+}
+
+.steps__step:first-child {
+    margin-bottom: 25px;
 }
 
 .steps__number {
@@ -623,6 +682,7 @@ header .submenu li a {
     color: rgb(73, 89, 255);
     font-weight: 700;
     width: 80px;
+    line-height: 1;
 }
 
 .steps__text {
@@ -649,7 +709,7 @@ header .submenu li a {
     opacity: 0;
 }
 
-.steps__illustrated_visible {
+.steps_visible .steps__illustrated {
     opacity: 1;
 }
 
@@ -679,6 +739,10 @@ header .submenu li a {
     font-weight: 400;
 }
 
+.steps__form {
+    margin-top: 44px;
+}
+
 /*form*/
 
 .form-wr {
@@ -686,7 +750,6 @@ header .submenu li a {
     background-color: rgb(250, 250, 250);
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 20px;
-    margin-top: 30px;
     position: relative;
 }
 
@@ -723,7 +786,6 @@ header .submenu li a {
     height: 70px;
     width: 100%;
     font-size: 22px;
-    color: rgb(112, 112, 112);
     font-weight: bold;
     text-transform: uppercase;
     outline: none;
@@ -763,39 +825,41 @@ header .submenu li a {
 
 /*documents*/
 
-.documents-screen {
+.documents{
     background-color: rgb(236, 236, 236);
     overflow: hidden;
 }
 
-.documents-screen .wrapper {
+.documents .wrapper {
     position: relative;
 }
 
-.documents-screen__background {
+.documents__background {
     background: url(../images/blazon.svg);
-    width: 600px;
+    width: 802px;
     height: 600px;
     position: absolute;
-    right: -154px;
+    right: -358px;
     bottom: -72px;
 }
 
-.documents-screen__photo {
+.documents__photo {
     background: url(../images/cert-mainpage.png) no-repeat center top;
     background-size: 100% auto;
     width: 51%;
 }
 
-.documents-screen__information {
-    padding: 65px 0 80px 20px;
+.documents__information {
+    flex: 1;
+    padding: 22px 0 80px 20px;
+    position: relative;
 }
 
-.information__documents {
+.information__list {
     margin: 27px 0 38px;
 }
 
-.documents__document {
+.list__item {
     display: block;
     font-size: 20px;
     font-weight: 700;
@@ -804,7 +868,7 @@ header .submenu li a {
     position: relative;
 }
 
-.documents__document::before {
+.list__item::before {
     content: "";
     background: url(../images/sprites.svg) no-repeat -413px -72px;;
 	width: 29px;
@@ -826,7 +890,7 @@ header .submenu li a {
     padding: 20px 0;
 }
 
-.partners__wrapper {
+.partners__inner {
     margin: 0 -15px;
 }
 
@@ -879,7 +943,7 @@ header .submenu li a {
 
 footer .first-footer {
     background: rgb(0,0,74);
-    background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
+    background-image: linear-gradient( 0deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
     padding: 28px 0;
     border-bottom: 1px solid rgb(255,255,255);
 }
@@ -998,12 +1062,84 @@ footer .menu li:first-child a {
         padding: 0 15px;
     }
     
-    header .navbar {
+    header .wrapper {
+        flex-direction: column
+    }
+
+    header .logo-bg {
+        right: 0;
+        width: 100%;
+    }
+
+    header .line {
         display: none;
     }
     
     header .burger {
         display: block;
+    }
+    
+     header .menu {
+        display: none;
+        position: absolute;
+        top: 200px;
+        left: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        background: #ffffff;
+        z-index: 3;
+    }
+    
+    header .menu li {
+        float: none;
+    }
+    
+    header .menu li:hover a {
+        background: rgb(0, 0, 74);
+        color: #ffffff;
+    }
+    
+    header .menu li a {
+        display: block;
+        padding: 22px 0;
+        border-bottom: 1px solid rgb(0, 0, 74);
+    }
+    
+    header .menu li:hover .sub-menu {
+        display: none;
+    }
+    
+    header .menu li .sub-menu {
+        position: static;
+    }
+    
+    header .sub-menu li {
+        border-top: 1px solid rgb(255, 255, 255);
+    }
+    
+    header .sub-menu li a {
+        width: 100%;
+    }
+    
+    header .phones {
+        justify-content: center;
+    }
+    
+    .products .wrapper {
+        padding: 0;
+    }
+    
+    .products__item {
+        padding: 30px;
+    }
+    
+    .products__text {
+        display: none;
+    }
+    
+    .products__icon {
+        margin: 0 auto;
     }
     
     .advantages {
@@ -1026,20 +1162,200 @@ footer .menu li:first-child a {
     .advantages__text {
         font-size: 15px;
     }
+    
+    .steps__wrapper {
+        padding: 0 15px;
+    }
+    
+    .steps__background {
+        display: none;
+    }
+    
+    .partners__partner-wr {
+        width: 33.3333%;
+    }
+    
+    .partners__partner-wr:last-child {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 1023px) {
-	
+    .header__button {
+        display: none;
+    }
+    
+    header .phone {
+        margin: 0 10px;
+    }
+    
+    .kenburn-slider .caption {
+        font-size: 50px;
+    }
+    
+    .kenburn-slider .small-caption {
+        font-size: 30px;
+    }
+    
+    .plant .wrapper {
+        flex-direction: column;
+    }
+    
+    .plant__info {
+        max-width: none;
+    }
+    
+    .plant__advantages {
+        margin: 35px 0;
+        width: 100%;
+    }
+    
+    .advantages__map {
+        display: none;
+    }
+    
+    .advantages__ray {
+        display: none;
+    }
+    
+    .advantages__icon {
+        width:90px;
+        height:90px;
+    }
+    
+    .advantages__advantage_delivery .advantages__icon,
+    .advantages__advantage_delivery .advantages__text {
+        position: initial;
+    }
+    
+    .steps__group {
+        width: 100%;
+    }
 
+    .steps__group::before {
+        display: none;
+    }
+    
+    .steps__step {
+        margin-bottom: 25px;
+    }
+    
+    .steps__illustrated {
+        display: none;
+    }
+    
+    .form .wpcf7-form-control-wrap {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .documents__background {
+        display: none;
+    }
+    
+    .documents .wrapper {
+        flex-direction: column-reverse;
+    }
+    
+    .documents__photo {
+        height: 797px;
+        width: 750px;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 767px) {
-	
-	
+    .header__button {
+        display: none;
+    }
+    
+    .products__item {
+        padding: 20px;
+    }
+    
+    .advantages__advantage {
+        width: 50%;
+        padding: 10px;
+    }
+    
+    .documents__photo {
+        height: 480px;
+        width: 450px;
+    }	
+    
+    .partners__partner-wr {
+        width: 50%;
+    }
+    
+    .first-footer .wrapper {
+        flex-direction: column;
+    }
+    
+    .logo_footer {
+        margin: 0 auto 30px;
+    }
+    
+    .contacts {
+        justify-content: center;
+    }
+    
+    footer .menu li {
+        float: none;
+        text-align: center;
+    }
+    
+    footer .menu li:before{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 639px) {
+    
+    .phone__number {
+        font-size: 16px;
+    }
+    
+    .phone__info {
+        font-size: 8px;
+    }
+    
+    header .menu {
+        top: 189px;
+    }
+    
+    .form {
+        padding: 20px 10px 30px;
+    }
+    
+    .contacts {
+        flex-direction: column;
+    }
+    
+    .contacts__line {
+        display: none;
+    }
+    
+    .contacts__column {
+        margin: 0 auto 10px;
+        max-width: 259px;
+        text-align: center;
+    }
+    
+    .third-footer .wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 
+@media screen and (max-width: 500px) {
 
+    .advantages__advantage {
+        width: 100%;
+    }
+    
+    .partners__partner-wr {
+        width: 100%;
+    }
 }
 
 

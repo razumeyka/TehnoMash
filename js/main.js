@@ -1,4 +1,21 @@
 $(document).ready(function(){
+
+//mobile_menu
+    
+    $('.burger').click( function() { 
+        $('header .menu').slideToggle(300);
+        $('.burger').toggleClass( 'burger_active' ); 
+    });
+
+// sub-menu 
+
+     $('.menu li').click(function(e){
+        e.preventDefault();
+        $(this).find('.sub-menu').slideToggle(300);
+    });  
+    
+// slider   
+    
     $(".slide-image").each(function(){
         var bg = $(this).data("bg");
         var pos = $(this).data("kenburn-start");
@@ -16,24 +33,24 @@ $(document).ready(function(){
         controlNav: false,
     });
     
-    $('.flexslider').flexslider({
-        animation: "slide"
-      });
+// animation   
+    
+    if ( $(window).width() > 1023 ) {
+        $('.advantages').viewportChecker({
+            classToAdd: 'advantages_visible',
+            offset: 10
+        });
+    }
 
-	$('.steps__illustrated').viewportChecker({
-		classToAdd: 'steps__illustrated_visible',
+	$('.steps').viewportChecker({
+		classToAdd: 'steps_visible',
 		offset: 50
 	});
+
     
-    $('.steps__group').viewportChecker({
-		classToAdd: 'steps__group_visible',
-		offset: 100
-	});
+// mask
     
-    $('.advantages__advantage').viewportChecker({
-		classToAdd: 'advantages__advantage_visible',
-		offset: 10
-	});
+    $(".wpcf7-tel").mask("8(999) 999-99-99");
     
     
 });
