@@ -8,18 +8,18 @@
     <title>Завод ТехноМаш</title>
 </head>
 <body>
-    <header class="flex">
-        <div class="logo-line">
-            <div class="wrapper flex_between">
+    <header>
+        <div class="wrapper flex_between">
+            <div class="logo-bg"></div>
+            <div class="line"></div>
+            <div class="logo-line flex_between">
                 <a class="logo" href="/"></a>
                 <a class="burger" href="#">
                     <span></span>
                 </a>
             </div>
-        </div>
-        <div class="phones-menu">
-            <div class="phones">
-                <div class="wrapper flex_end">
+            <div class="phones-menu">
+                <div class="phones flex_end">
                     <a href="#" class="button">заказать звонок</a>
                     <div class="phone">
                         <a class="phone__number" href="tel:88006000844">8 (800) 6000-844</a>  
@@ -30,9 +30,7 @@
                         <div class="phone__info">Центральный офис компании</div>  
                     </div>
                 </div>
-            </div>
-            <div class="menu-line">
-                <div class="wrapper flex_end">
+                <div class="menu-line flex_end">
                     <nav class="navbar">
                         <ul class="menu">
                             <li>
@@ -60,12 +58,22 @@
             </div>
         </div>
     </header>
-    <section class="main-screen">
-        <div class="wrapper">
-            <h1 class="main-screen__caption">Котельные «под ключ»</h1>
-            <div>от завода-изготовителя</div>
+    <div class="main-screen">
+        <div class="kenburn-slider">
+            <ul class="slides">
+                <li> 
+                    <h1 class="main-screen__caption">Котельные «под ключ»</h1>
+                    <div class="main-screen__small-caption">от завода-изготовителя</div>
+                    <div class="slide-image" data-bg="images/slide-1.jpg" data-kenburn-start="center center"></div> 
+                </li>
+                <li>
+                    <h1 class="main-screen__caption">Котельные «под ключ»</h1>
+                    <div class="main-screen__small-caption">от завода-изготовителя</div>
+                    <div class="slide-image" data-bg="images/slide-2.jpg" data-kenburn-start="top left"></div>
+                </li>
+            </ul>
         </div>
-    </section>
+    </div>
     <div class="products">
         <div class="wrapper">
             <div class="products__inner">
@@ -113,10 +121,8 @@
             <div class="advantages plant-screen__advantages flex">
                 <div class="advantages__map"></div>
                 <div class="advantages__advantage advantages__advantage_delivery">
-                    <div class="advantages__animated-icon">
-                        <div class="advantages__ray"></div>
-                        <div class="advantages__icon"></div>
-                    </div>
+                    <div class="advantages__ray"></div>
+                    <div class="advantages__icon"></div>
                     <div class="advantages__text"><span>Доставка</span> по всей России</div>
                 </div>
                 <div class="advantages__advantage advantages__advantage_staff">
@@ -138,7 +144,7 @@
         <div class="wrapper">
             <div class="steps__background steps__background_left"></div>
             <div class="steps__background steps__background_right"></div>
-            <h3> Готовая котельная за 10 дней</h3>
+            <h2> Готовая котельная за 10 дней</h2>
             <div class="steps__wrapper flex">
                 <div class="steps__group">
                     <div class="steps__step flex">
@@ -210,7 +216,7 @@
             <div class="documents-screen__background"></div>
             <div class="documents-screen__photo"></div>
             <div class="information documents-screen__information">
-                <div class="information__caption">Документы в порядке</div>
+                <h2 class="information__caption">Документы в порядке</h2>
                 <div class="information__description"><b>Компания «ТехноМаш»</b> обладает всеми необходимыми сертификатами, разрешениями и свидетельствами, позволяющими вести производственную и проектную деятельность. </div>
                 <div class="documents information__documents">
                     <a href="#" class="documents__document">Название документа номер 1</a>
@@ -302,5 +308,6 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
 <script src="js/main.js"></script>
 </html> 

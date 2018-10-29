@@ -107,13 +107,33 @@ button,input,select,textarea{
 header {
     box-sizing: border-box; 
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+header .logo-bg {
+    background: rgb(0,0,74);
+    width: calc((100% - 1200px) /2 + 245px);
+    height: 133px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+header .line {
+    background: rgb(196, 196, 196);
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 75px;
 }
 
 header .logo-line {
     background: rgb(0,0,74);
     background-image: linear-gradient( 90deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
-    width: 325px;
     padding: 10px 0;
+    position: relative;
+    z-index: 2;
+    width: 248px;
 }
 
 .logo {
@@ -121,7 +141,6 @@ header .logo-line {
     background: url(../images/logo.png);
     width: 150px;
     height: 110px;
-    margin-left: 37px;
 }
 
 header .phones-menu {
@@ -166,11 +185,6 @@ header .phone {
 .phone__info {
     font-size: 13px;
     color: rgb(98, 98, 98);
-}
-
-header .menu-line {
-    box-sizing: border-box;
-    border-top: 1px solid rgb(196, 196, 196);
 }
 
 header .menu {
@@ -232,26 +246,80 @@ header .submenu li a {
 
 /*main-screen*/
 
-.main-screen {
-    background: url(../images/slide-1.jpg) no-repeat center;
-    background-size: cover;
-    padding: 130px 0 225px;
+.main-screen__small-caption {
     font: 70 36px "ProximaNovaCond";
     color: rgb(255, 255, 255);
     text-align: center;
+    position: relative;
+    z-index: 1000;
 }
 
 .main-screen__caption {
     font: 700 66px "ProximaNovaCond";
     color: rgb(255, 255, 255);
     text-align: center;
-    margin: 0 0 5px;
+    margin: 130px 0 5px;
+    position: relative;
+    z-index: 1000;
+}
+
+.kenburn-slider {
+    margin: 0 auto;
+    position: relative;
+}
+
+.kenburn-slider .slides {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.kenburn-slider .slides > li {
+    float: left;
+    margin-right: -100%;
+    width: 100%;
+    overflow: hidden;
+    height: 485px;
+    position: relative;
+}
+
+.slide-image {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.flex-active-slide .slide-image {
+    -webkit-animation: zoomout 5s;
+    animation: zoomout 5s;
+}
+
+@-webkit-keyframes zoomout {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+}
+
+.flex-control-nav, .flex-direction-nav {
+    display: none;
 }
 
 /*products*/
 
 .products {
     margin-top: -109px;
+    position: relative;
+    z-index: 1000;
 }
 
 .products__inner {
@@ -403,21 +471,13 @@ header .submenu li a {
     width: 25%;
 }
 
-.advantages__advantage_delivery {
-    position: relative;
-}
-
 .advantages__advantage_delivery .advantages__icon {
     position: absolute;
     top: -149px;
     right: 0;
 }
 
-.advantages__advantage_delivery .advantages__icon_visible {
-    -webkit-transform: translate(-40px, 150px);
-	-moz-transform: translate(-40px, 150px);
-	-ms-transform: translate(-40px, 150px);
-	-o-transform: translate(-40px, 150px);
+.advantages__advantage_delivery.advantages__advantage_visible .advantages__icon {
 	transform: translate(-40px, 150px);
 }
 
@@ -435,13 +495,9 @@ header .submenu li a {
     transition: all 2s linear 200ms;
 }
 
-.advantages__ray_visible {
+.advantages__advantage_visible .advantages__ray {
     width: 134px;
 	height: 235px;
-    -webkit-transform: translate(-40px, 150px);
-	-moz-transform: translate(-40px, 150px);
-	-ms-transform: translate(-40px, 150px);
-	-o-transform: translate(-40px, 150px);
 	transform: translate(-40px, 150px);
 }
 
@@ -460,7 +516,7 @@ header .submenu li a {
     transition: all 2s linear 200ms;
 }
 
-.advantages__icon_visible {
+.advantages__advantage_visible .advantages__icon {
     width:90px;
     height:90px;
 }
@@ -586,13 +642,6 @@ header .submenu li a {
     box-sizing: border-box;
     padding: 0 25px;
     justify-content: center;
-}
-
-.steps__icon {
-    background: url(../images/sprites.svg) no-repeat -162px -20px;
-    width: 99px;
-	height: 98px;
-    margin: auto 0;
     -webkit-transition: all 2s linear 700ms;
     -moz-transition: all 2s linear 700ms;
     -o-transition: all 2s linear 700ms;
@@ -600,8 +649,15 @@ header .submenu li a {
     opacity: 0;
 }
 
-.steps__icon_visible {
+.steps__illustrated_visible {
     opacity: 1;
+}
+
+.steps__icon {
+    background: url(../images/sprites.svg) no-repeat -162px -20px;
+    width: 99px;
+	height: 98px;
+    margin: auto 0;
 }
 
 .steps__illustrated_delivery .steps__icon {
