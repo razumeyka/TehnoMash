@@ -52,5 +52,15 @@ $(document).ready(function(){
     
     $(".wpcf7-tel").mask("8(999) 999-99-99");
     
+// document-height    
+    
+    $( window ).resize(function() {   
+        $('.documents__photo').css('height',parseFloat($('.documents__photo').css('width'))/1.1+'px');
+    });  
+    
+    $( window ).resize(function() {   
+        var w=$('.documents__photo').width(); 
+        $('.documents__photo').css('height',w/1.1+'px');
+    });
     
 });

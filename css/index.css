@@ -1258,9 +1258,7 @@ footer .menu li:first-child a {
     }
     
     .documents__photo {
-        height: 797px;
-        width: 750px;
-        margin: 0 auto;
+        width: 100%;
     }
 }
 
@@ -1276,11 +1274,6 @@ footer .menu li:first-child a {
     .advantages__advantage {
         width: 50%;
         padding: 10px;
-    }
-    
-    .documents__photo {
-        height: 480px;
-        width: 450px;
     }	
     
     .partners__partner-wr {
