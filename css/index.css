@@ -80,7 +80,7 @@ button,input,select,textarea{
 }
 
 .wrapper {
-    max-width:1200px;
+    max-width:1230px;
     padding:0 40px;
     margin:0 auto;
 }
@@ -113,8 +113,8 @@ header {
 header .logo-bg {
     background: rgb(0,0,74);
     background-image: linear-gradient( 0deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
-    width: calc((100% - 1200px) /2 + 245px);
-    height: 133px;
+    width: calc((100% - 1230px) /2 + 250px);
+    height: 100%;
     position: absolute;
     left: 0;
     z-index: 1;
@@ -248,7 +248,7 @@ header .sub-menu li a {
     display: none;
     position: absolute;
     width: 40px;
-    height: 40px;
+    height: 42px;
     right: 0;
     top: 0;
     bottom: 0;
@@ -260,12 +260,12 @@ header .sub-menu li a {
     display: block;
     cursor: pointer;
     border-radius: 5px;
-    height: 4px;
-    width: 36px;
+    height: 3px;
+    width: 30px;
     background: rgb(255, 255, 255);
     position: absolute;
     top: 10px;
-    right: 15px;
+    right: 5px;
     transition: all 200ms ease-in-out;
 }
 
@@ -284,23 +284,27 @@ header .sub-menu li a {
     background-color: transparent;
 }
     
- .burger_active span::before  {
+.burger_active span::before  {
     transform: rotate(45deg);
     top: 8px;
 }
 
- .burger_active span::after  {
+.burger_active span::after  {
     transform: rotate(-45deg);
     top: 8px;
 } 
 
 /*slider*/
 
+.kenburn-slider .slider-text {
+    margin-top: 130px;
+}
+
 .kenburn-slider .caption {
     font: 700 66px "ProximaNovaCond";
     color: rgb(255, 255, 255);
     text-align: center;
-    margin: 130px 0 5px;
+    margin: 0 0 5px;
     position: relative;
     z-index: 1000;
     padding: 0 15px;
@@ -352,19 +356,15 @@ header .sub-menu li a {
 }
 
 @-webkit-keyframes zoomout {
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
     
-    80% {
+    0% {
         -webkit-transform: scale(1.3);
         transform: scale(1.3);
     }
     
     100% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
 }
 
@@ -429,7 +429,8 @@ header .sub-menu li a {
 
 .products__icon {
     background: #ffffff;
-    width: 85px;
+    width: 100%;  
+    max-width: 85px; 
     height: 80px;
     margin: 0 auto 20px;
 }
@@ -447,13 +448,9 @@ header .sub-menu li a {
 .plant {
     background: url(../images/map_block_bg.jpg) no-repeat center;
     background-size: cover;
-    padding: 130px 0 85px;
+    padding: 167px 0 85px;
     margin-top: -105px;
     overflow: hidden;
-}
-
-.plant .wrapper {
-    position: relative;
 }
 
 .plant__info {
@@ -468,7 +465,7 @@ header .sub-menu li a {
 .information__caption {
     font-size: 48px;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin: 0 0 25px;
 }
 
 .information__description {
@@ -510,11 +507,11 @@ header .sub-menu li a {
 
 .advantages__map {
     background: url(../images/map.svg) no-repeat;
-    width: 1000px;
+    width: 1180px;
     height: 600px;
     position: absolute;
     bottom: 80px;
-    right: -242px;
+    right: -380px;
 }
 
 .advantages__advantage {
@@ -614,26 +611,26 @@ header .sub-menu li a {
 
 .steps__wrapper {
     max-width: 940px;
-    padding: 0 40px;
+    padding: 0 15px;
     margin: 0 auto;
     position: relative;
 }
 
 .steps__background {
     background: url(../images/boiler-bg.png) no-repeat,     radial-gradient(rgb(16, 13, 87), rgb(0, 0, 74));
-    width: 670px;
+    width: 1135px;
     height: 670px;
     position: absolute;
 }
 
 .steps__background_right {
     bottom: -172px;
-    right: -156px;
+    right: -621px;
 }
 
 .steps__background_left {
     top: -12px;
-    left: -703px;
+    left: -1168px;
     background-position: right top;
 }
 
@@ -732,6 +729,7 @@ header .sub-menu li a {
     font-weight: 700;
     text-transform: uppercase;
     margin: auto 0;
+    padding-left: 15px;
 }
 
  .steps__term {
@@ -844,14 +842,14 @@ header .sub-menu li a {
 }
 
 .documents__photo {
-    background: url(../images/cert-mainpage.png) no-repeat center top;
+    background: url(../images/cert-mainpage.png) no-repeat center;
     background-size: 100% auto;
     width: 51%;
 }
 
 .documents__information {
     flex: 1;
-    padding: 22px 0 80px 20px;
+    padding: 62px 0 80px 20px;
     position: relative;
 }
 
@@ -953,8 +951,8 @@ footer .first-footer {
 }
 
 .contacts__column {
+    display: inline-block;
     margin: auto 0;
-    max-width: 259px;
 }
 
 .contacts__number {
@@ -977,7 +975,7 @@ footer .first-footer {
 .contacts__line {
     background: rgb(234, 235, 235);
     width: 1px;
-    height: 121px;
+    height: 100%;
     margin: 0 35px;
 }
 
@@ -1069,6 +1067,7 @@ footer .menu li:first-child a {
     header .logo-bg {
         right: 0;
         width: 100%;
+        height: 133px;
     }
 
     header .line {
@@ -1106,6 +1105,10 @@ footer .menu li:first-child a {
         border-bottom: 1px solid rgb(0, 0, 74);
     }
     
+    header .menu>li:last-child a {
+        padding: 22px 0;
+    }
+    
     header .menu li:hover .sub-menu {
         display: none;
     }
@@ -1124,6 +1127,14 @@ footer .menu li:first-child a {
     
     header .phones {
         justify-content: center;
+    }
+    
+    .kenburn-slider .slider-text {
+        margin-top: 200px;
+    }
+    
+    .products {
+        margin-top: 0px;
     }
     
     .products .wrapper {
@@ -1147,7 +1158,15 @@ footer .menu li:first-child a {
     }
     
     .advantages__map {
-        right: -360px;
+        right: -540px;
+    }
+    
+    .advantages_visible .advantages__advantage_delivery .advantages__icon {
+        transform: translate(-27px, 150px);
+    }
+    
+    .advantages_visible .advantages__ray {
+        transform: translate(-27px, 150px);
     }
 
     .advantages__advantage {
@@ -1164,10 +1183,14 @@ footer .menu li:first-child a {
     }
     
     .steps__wrapper {
-        padding: 0 15px;
+        max-width: 1000px; 
     }
     
     .steps__background {
+        display: none;
+    }
+    
+    .steps__group::before {
         display: none;
     }
     
@@ -1206,7 +1229,7 @@ footer .menu li:first-child a {
     }
     
     .plant__advantages {
-        margin: 35px 0;
+        margin: 35px 0 0;
         width: 100%;
     }
     
@@ -1231,10 +1254,6 @@ footer .menu li:first-child a {
     .steps__group {
         width: 100%;
     }
-
-    .steps__group::before {
-        display: none;
-    }
     
     .steps__step {
         margin-bottom: 25px;
@@ -1258,7 +1277,7 @@ footer .menu li:first-child a {
     }
     
     .documents__photo {
-        width: 100%;
+        display: none;
     }
 }
 
@@ -1297,6 +1316,10 @@ footer .menu li:first-child a {
         text-align: center;
     }
     
+    footer .menu li:first-child a {
+        padding: 19px 18px;
+    }
+    
     footer .menu li:before{
         display: none;
     }
@@ -1320,6 +1343,14 @@ footer .menu li:first-child a {
         padding: 20px 10px 30px;
     }
     
+    .form__button {
+        padding: 0 10px;
+    }
+    
+    .form__button::before {
+        display: none;
+    }
+    
     .contacts {
         flex-direction: column;
     }
@@ -1337,17 +1368,6 @@ footer .menu li:first-child a {
     .third-footer .wrapper {
         flex-direction: column;
         text-align: center;
-    }
-}
-
-@media screen and (max-width: 500px) {
-
-    .advantages__advantage {
-        width: 100%;
-    }
-    
-    .partners__partner-wr {
-        width: 100%;
     }
 }
 
