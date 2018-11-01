@@ -79,6 +79,10 @@ button,input,select,textarea{
     font-size: 20px;
 }
 
+h1,h2,h3,h4,h5 {
+    margin: 0;
+}
+
 .wrapper {
     max-width:1230px;
     padding:0 40px;
@@ -477,7 +481,7 @@ header .sub-menu li a {
 .statistic__item {
     box-sizing: border-box;
     border-left: 7px solid rgb(233, 19, 19);
-    padding-left: 28px;
+    padding: 0 28px;
     margin-bottom: 60px;
 }
 
@@ -494,6 +498,7 @@ header .sub-menu li a {
     color: rgb(0, 0, 0);
     margin: 5px 0;
     line-height: 1.5;
+    letter-spacing: 0.1px;
 }
 
 .plant__advantages {
@@ -795,13 +800,16 @@ header .sub-menu li a {
 }
 
 .form__button {
-    height: 70px;
     width: 100%;
-    position: relative;
-    padding: 0 0 0 75px;
 }
 
-.form__button::before {
+.button_icon {
+    position: relative;
+    height: 70px;
+    padding: 12px 0 12px 75px;
+}
+
+.button_icon::before {
     content: "";
     background: url(../images/sprites.svg) no-repeat -406px -1px;
     width: 70px;
@@ -1046,6 +1054,157 @@ footer .menu li:first-child a {
 .third-footer a {
     color: rgb(186, 186, 186);
 }
+
+/*inner-pages*/
+
+/*inner-caption*/
+
+.inner-caption {
+    background: url(../images/header-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 35px 0;
+    font: 700 66px  "ProximaNovaCond";
+    color: rgb(255, 255, 255);
+}
+
+/*inner-page*/
+
+.inner-page {
+    padding: 50px 0 100px;
+}
+
+.framed {
+    position: relative;
+    padding: 50px 60px;
+}
+
+.framed::before {
+    content: "";
+    width: 286px;
+    height: 286px;
+    border-top: 15px solid #00004a;
+    border-left: 15px solid #00004a;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.framed__information {
+    flex: 1;
+    max-width: 600px;
+}
+
+.framed__information .information__description {
+    margin-bottom: 30px;
+}
+
+.information__description span {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.framed__photo_one {
+    background: rgb(255,255,255);
+    background-size: contain;
+    position: absolute;
+    width: 732px;
+    height: 488px;
+    right: -300px;
+    top: 0;
+}
+
+.framed__photo_two {
+    background: rgba(10,6,53,0.6);
+    background-size: contain;
+    position: absolute;
+    width: 492px;
+    height: 410px;
+    right: 0;
+    bottom: 30px;
+}
+
+.framed__photo_three {
+    background: url(../images/plant-1.jpg) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    width: 492px;
+    height: 410px;
+    top: 60px;
+    right: 60px;
+}
+
+.details {
+    position: relative;
+    padding: 30px 0 0 405px;
+}
+
+.details__photo {
+    background: url(../images/plant-2.png) no-repeat center;
+    width: 550px;
+    height: 900px;
+    position: absolute;
+    left: -170px;
+    top: -50px;
+}
+
+.details__statistic .statistic__item {
+    width: 50%;  
+}
+
+.details__statistic .statistic__item:last-child {
+    margin-bottom: 60px;
+}
+
+.banner {
+    box-sizing: border-box;
+    border: 7px solid rgb(0, 0, 74);
+    padding: 30px 40px 35px;
+}
+
+.banner__caption {
+    font: 700 48px "ProximaNovaCond";
+}
+
+.banner__description {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+    margin: 10px 0 20px;
+}
+
+.banner__unique {
+    font: 700 22px "ProximaNovaCond";
+    width: 45%;
+    margin: auto 0;
+    position: relative;
+}
+
+.banner__unique::before {
+    content: "";
+    background: #f30a0a;
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    top: -33px;
+    right: -10px;
+}
+
+.banner__button {
+    width: 53%;
+}
+
+
+
+
+
+
+
+
+
+
+/*media*/
+
+
 
 @media screen and (max-width: 1500px) {
 	

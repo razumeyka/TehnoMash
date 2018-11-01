@@ -35,7 +35,7 @@ $(document).ready(function(){
     
 // animation   
     
-    if ( $(window).width() > 1023 ) {
+    if ( window.innerWidth > 1023 ) {
         $('.advantages').viewportChecker({
             classToAdd: 'advantages_visible',
             offset: 10
