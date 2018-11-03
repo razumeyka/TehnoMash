@@ -1234,13 +1234,6 @@ footer .menu li:first-child a {
 
 
 
-
-
-
-
-
-
-
 /*media*/
 
 
@@ -1276,7 +1269,7 @@ footer .menu li:first-child a {
         display: block;
     }
     
-     header .menu {
+    header .menu {
         display: none;
         position: absolute;
         top: 200px;
