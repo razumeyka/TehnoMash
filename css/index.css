@@ -402,27 +402,27 @@ header .sub-menu li a {
     text-decoration: none;
 }
 
-.products__item_water {
+.products__item_water_boilers {
     background: rgb(0,0,74);
     background-image: linear-gradient( 0deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
 }
 
-.products__item_condensing {
+.products__item_condensing_boilers {
     background: rgb(0,0,74);
     background-image: linear-gradient( 0deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
 }
 
-.products__item_steam-water {
+.products__item_steam_boilers {
     background: rgb(0,0,74);
     background-image: linear-gradient( 0deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
 }
 
-.products__item_thermal {
+.products__item_block_thermal_points {
     background: rgb(0,0,74);
     background-image: linear-gradient( 0deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
 }
 
-.products__item_outdoor {
+.products__item_outdoor_boilers {
     background: rgb(0,0,74);
     background-image: linear-gradient( 0deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
 }
