@@ -1232,11 +1232,89 @@ footer .menu li:first-child a {
     width: 53%;
 }
 
+/*product*/
+
+.inner-caption .wrapper {
+    position: relative;
+}
+
+.inner-caption__icon {
+	background: url(../images/sprites.svg) no-repeat -7px -271px;
+    width: 87px;
+    height: 86px;
+}
+
+.inner-caption h2 {
+    font: 700 60px "ProximaNovaCond";
+    color: rgb(255, 255, 255);
+    max-width: 300px;
+}
+
+.inner-caption__small {
+    font: 800 28px "ProximaNovaCond";
+    color: rgb(255, 255, 255);
+    max-width: 300px;
+}
+
+.inner-caption__photo_water {
+    background: url(../images/product_1-0.png) no-repeat center;
+    background-size: contain;
+    width: 910px;
+    height: 790px;
+    position: absolute;
+    top: -300px;
+    right: 0;
+}
+
+.description {
+    font-size: 20px;
+    color: rgb(0,0,0);
+    max-width: 600px;
+}
+
+.description span {
+    font-size: 24px;
+    font-size: 700;
+}
+
+.fuel {
+    background: #ececec;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.fuel__icon {
+    background: url(../images/fuel.svg) no-repeat -1px 3px;
+    width: 53px;
+    height: 60px;
+    float: left;
+}
+
+.fuel__caption {
+    font: 700 42px "ProximaNovaCond";
+}
+
+.fuel__list {
+    margin: 0 -20px;
+}
+
+.fuel__item {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.fuel__small-caption {
+    font: 700 24px "ProximaNovaCond";
+}
+
+.fuel__description {
+    font-size: 18px;
+}
+
 
 
 /*media*/
-
-
 
 @media screen and (max-width: 1500px) {
 	
@@ -1571,7 +1649,7 @@ footer .menu li:first-child a {
         padding: 12px 10px;
     }
     
-    .button_icon::before {
+    .button_icon::after, .button_icon::before  {
         display: none;
     }
     

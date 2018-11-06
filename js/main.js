@@ -13,6 +13,13 @@ $(document).ready(function(){
         e.preventDefault();
         $(this).find('.sub-menu').slideToggle(300);
     });  
+  
+    $('.menu li.menu-item-has-children>a').click(function(e){
+		e.preventDefault();
+		$('.sub-menu').not($(this).closest('li').find('.sub-menu')).slideUp('300');
+		$(this).closest('li').find('.sub-menu').slideToggle('300');
+    }); 
+
     
 // slider   
     
