@@ -326,6 +326,7 @@ header .sub-menu li a {
 .kenburn-slider {
     margin: 0 auto;
     position: relative;
+    background: #060735;
 }
 
 .kenburn-slider .slides {
@@ -432,11 +433,27 @@ header .sub-menu li a {
 }
 
 .products__icon {
-    background: #ffffff;
+    background: url('../images/sprites.svg') no-repeat -7px -271px;
     width: 100%;  
-    max-width: 85px; 
-    height: 80px;
+    max-width: 86px; 
+    height: 86px;
     margin: 0 auto 20px;
+}
+
+.products__item_condensing_boilers .products__icon {
+    background-position: -136px -271px;
+}
+
+.products__item_steam_boilers .products__icon {
+    background-position: -266px -271px;
+}
+
+.products__item_block_thermal_points .products__icon {
+    background-position: -396px -271px;
+}
+
+.products__item_outdoor_boilers .products__icon {
+    background-position: -525px -271px;
 }
 
 .products__text {
@@ -760,7 +777,7 @@ header .sub-menu li a {
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 20px 30px 30px;
+    padding: 20px 45px 30px;
     position: relative;
 }
 
@@ -772,14 +789,18 @@ header .sub-menu li a {
     margin-bottom: 23px;
 }
 
-.form .wpcf7-form-control-wrap {
+.wpcf7-form {
+    margin: 0 -15px;
+}
+
+.wpcf7-form-control-wrap {
     display: block;
     box-sizing: border-box;
     width: 50%;
     padding: 0 15px;
 }
 
-.form .wpcf7-form-control {
+.wpcf7-form-control {
     display: block;
     box-sizing: border-box;
     border: 1px solid rgb(192, 192, 192);
@@ -1134,7 +1155,7 @@ footer .menu li:first-child a {
 
 .framed__photo {
     background: url(../images/plant-1.jpg) no-repeat center;
-    background-size: contain;
+    background-size: cover;
 }
 
 .framed__photo_one {
@@ -1220,9 +1241,9 @@ footer .menu li:first-child a {
 
 .banner__unique::before {
     content: "";
-    background: #f30a0a;
-    width: 150px;
-    height: 30px;
+    background: url(../images/sprites.svg) -661px -24px;
+	width: 146px;
+	height: 35px;
     position: absolute;
     top: -33px;
     right: -10px;
@@ -1234,20 +1255,27 @@ footer .menu li:first-child a {
 
 /*product*/
 
+.inner-caption_product {
+    padding: 50px 0 120px;
+}
+
 .inner-caption .wrapper {
     position: relative;
 }
 
 .inner-caption__icon {
-	background: url(../images/sprites.svg) no-repeat -7px -271px;
-    width: 87px;
-    height: 86px;
+	background: url(../images/sprites.svg) no-repeat -2px -266px rgb(0, 0, 81);
+    width: 95px;
+    height: 95px;
+    border: 3px solid rgb(255, 255, 255);
 }
 
 .inner-caption h2 {
     font: 700 60px "ProximaNovaCond";
     color: rgb(255, 255, 255);
+    line-height: 1;
     max-width: 300px;
+    margin: 20px 0;
 }
 
 .inner-caption__small {
@@ -1258,50 +1286,167 @@ footer .menu li:first-child a {
 
 .inner-caption__photo_water {
     background: url(../images/product_1-0.png) no-repeat center;
-    background-size: contain;
+    background-size: cover;
     width: 910px;
     height: 790px;
     position: absolute;
-    top: -300px;
-    right: 0;
+    bottom: -411px;
+    right: -27px;
+}
+
+.inner-page_product {
+    padding: 40px 0 0;
 }
 
 .description {
     font-size: 20px;
     color: rgb(0,0,0);
+    line-height: 1.5;
     max-width: 600px;
+    margin-bottom: 25px;
 }
 
 .description span {
     font-size: 24px;
-    font-size: 700;
+    font-weight: 700;
+}
+
+.inner-page__types {
+    margin: 50px 0 20px;
+}
+
+.types__type {
+    font: 400 20px "ProximaNovaCond";
+    letter-spacing: 0.1px;
+    border-bottom: 1px dashed rgb(0, 0, 74);
+    cursor: pointer;
+    height: fit-content;
+    margin: auto 35px auto 0;
+}
+
+.types__type_active {
+    background: rgb(255,255,255);
+    font-size: 24px;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 8px 18px;
+    border: 2px solid rgb(0, 0, 74);
+    position: relative;
+    z-index: 1;
+}
+
+.viewport {
+    width: 100%;
+    position: relative;
+}
+
+.slidewrapper {
+    position: relative;
+    width: 500%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    width: 20%;
+    display: flex;
+    flex-wrap: nowrap;
+    float: left;
+}
+
+.slide__photos {
+    position: relative;
+}
+
+.slide__photo {
+    background: url(../images/kotelnaja_teplo-1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.slide__photo_one {
+    position: absolute;
+    width: 552px;
+    height: 428px;
+    left: -100px;
+    bottom: 86px;
+    opacity: 0.122;
+}
+
+.slide__photo_two {
+    position: absolute;
+    width: 552px;
+    height: 348px;
+    bottom: 30px;
+    left: 0;
+}
+
+.slide__photo_two:before {
+    content: "";
+    background: rgba(10,6,53,0.6);
+    position: absolute;
+    width: 552px;
+    height: 348px;
+    bottom: 30;
+    left: 0;
+}
+
+.slide__photo_three {
+    position: relative;
+    width: 552px;
+    height: 348px;
+    left: 60px;
+    bottom: -25px;
+}
+
+.slide__text {
+    padding: 20px 0 0 110px;
 }
 
 .fuel {
     background: #ececec;
-    padding: 30px 0;
+    padding: 40px 0 73px;
     overflow: hidden;
 }
 
 .fuel__icon {
-    background: url(../images/fuel.svg) no-repeat -1px 3px;
-    width: 53px;
-    height: 60px;
-    float: left;
+    background: url(../images/fuel.svg) no-repeat 6px 7px rgb(255,255,255);
+    width: 70px;
+    height: 70px;
+    border: 5px solid rgb(0, 0, 74);
+    margin-right: 20px;
 }
 
 .fuel__caption {
     font: 700 42px "ProximaNovaCond";
+    margin: auto 0;
 }
 
 .fuel__list {
-    margin: 0 -20px;
+    margin: 25px -25px 0;
 }
 
 .fuel__item {
     width: 25%;
     box-sizing: border-box;
-    padding: 0 20px;
+    padding: 0 25px;
+}
+
+.fuel__square {
+    display: flex;
+    border: 2px solid rgb(219, 28, 28);
+    background-color: rgb(255, 255, 255);
+    width: 12px;
+    height: 12px;
+    margin: auto 13px auto 0;
+}
+
+.fuel__square-small {
+    background: rgb(0,0,74);
+    width: 6px;
+    height: 6px;
+    margin: auto;
 }
 
 .fuel__small-caption {
@@ -1310,6 +1455,29 @@ footer .menu li:first-child a {
 
 .fuel__description {
     font-size: 18px;
+    margin-top: 12px;
+}
+
+.project{
+    padding: 60px 0 100px;
+}
+
+.project .wrapper {
+    position: relative;
+}
+
+.project__photo {
+    background: url(../images/product_1-1.png) no-repeat center;
+    width: 765px;
+    height: 765px;
+    position: absolute;
+    left: -416px;
+    bottom: -170px;
+}
+
+.project__banner {
+    max-width: 905px;
+    margin: 0 0 0 auto;
 }
 
 
