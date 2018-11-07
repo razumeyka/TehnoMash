@@ -1301,6 +1301,7 @@ footer .menu li:first-child a {
 .description {
     font-size: 20px;
     color: rgb(0,0,0);
+    letter-spacing: 0.1px;
     line-height: 1.5;
     max-width: 600px;
     margin-bottom: 25px;
@@ -1312,7 +1313,7 @@ footer .menu li:first-child a {
 }
 
 .inner-page__types {
-    margin: 50px 0 20px;
+    margin-top: 50px;
 }
 
 .types__type {
@@ -1338,6 +1339,8 @@ footer .menu li:first-child a {
 .viewport {
     width: 100%;
     position: relative;
+    overflow: hidden;
+    padding-bottom: 40px;
 }
 
 .slidewrapper {
@@ -1351,9 +1354,14 @@ footer .menu li:first-child a {
 
 .slide {
     width: 20%;
+    display: inline;
+    float: left;
+    overflow: hidden;
+}
+
+.slide .wrapper {
     display: flex;
     flex-wrap: nowrap;
-    float: left;
 }
 
 .slide__photos {
@@ -1368,9 +1376,9 @@ footer .menu li:first-child a {
 .slide__photo_one {
     position: absolute;
     width: 552px;
-    height: 428px;
+    height: 430px;
     left: -100px;
-    bottom: 86px;
+    bottom: 60px;
     opacity: 0.122;
 }
 
@@ -1378,7 +1386,7 @@ footer .menu li:first-child a {
     position: absolute;
     width: 552px;
     height: 348px;
-    bottom: 30px;
+    bottom: 20px;
     left: 0;
 }
 
@@ -1388,7 +1396,7 @@ footer .menu li:first-child a {
     position: absolute;
     width: 552px;
     height: 348px;
-    bottom: 30;
+    bottom: 0;
     left: 0;
 }
 
@@ -1397,11 +1405,11 @@ footer .menu li:first-child a {
     width: 552px;
     height: 348px;
     left: 60px;
-    bottom: -25px;
+    bottom: -50px;
 }
 
 .slide__text {
-    padding: 20px 0 0 110px;
+    padding: 45px 0 0 110px;
 }
 
 .fuel {
