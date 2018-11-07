@@ -61,14 +61,11 @@ $(document).ready(function(){
     
 // product-slider
         
-    var slideNow = 1;   
-    var slideCount = console.log($('.slidewrapper .slide').length);
-    var navBtnId = 0;
-    
+    var navBtnId = 0;    
     $('.types__type').click(function() {
         $('.types__type').removeClass('types__type_active');
         navBtnId = $(this).index();
-            $('.slidewrapper').css(
+            $('.slider__inner').css(
                 'margin-left','-'+navBtnId+'00%'); 
         $(this).addClass('types__type_active');
     });

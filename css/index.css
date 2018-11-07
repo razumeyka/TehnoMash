@@ -1336,14 +1336,14 @@ footer .menu li:first-child a {
     z-index: 1;
 }
 
-.viewport {
+.slider {
     width: 100%;
     position: relative;
     overflow: hidden;
     padding-bottom: 40px;
 }
 
-.slidewrapper {
+.slider__inner {
     position: relative;
     width: 500%;
     top: 0;
@@ -1352,28 +1352,31 @@ footer .menu li:first-child a {
     padding: 0;
 }
 
-.slide {
+.slider__slide {
     width: 20%;
     display: inline;
     float: left;
     overflow: hidden;
 }
 
-.slide .wrapper {
+.slider__wrapper {
     display: flex;
     flex-wrap: nowrap;
+    max-width: 1230px;
+    padding: 0 40px;
+    margin: 0 auto;
 }
 
-.slide__photos {
+.slider__photos {
     position: relative;
 }
 
-.slide__photo {
+.slider__photo {
     background: url(../images/kotelnaja_teplo-1.jpg) no-repeat center;
     background-size: cover;
 }
 
-.slide__photo_one {
+.slider__photo_one {
     position: absolute;
     width: 552px;
     height: 430px;
@@ -1382,7 +1385,7 @@ footer .menu li:first-child a {
     opacity: 0.122;
 }
 
-.slide__photo_two {
+.slider__photo_two {
     position: absolute;
     width: 552px;
     height: 348px;
@@ -1390,7 +1393,7 @@ footer .menu li:first-child a {
     left: 0;
 }
 
-.slide__photo_two:before {
+.slider__photo_two:before {
     content: "";
     background: rgba(10,6,53,0.6);
     position: absolute;
@@ -1400,7 +1403,7 @@ footer .menu li:first-child a {
     left: 0;
 }
 
-.slide__photo_three {
+.slider__photo_three {
     position: relative;
     width: 552px;
     height: 348px;
@@ -1408,7 +1411,7 @@ footer .menu li:first-child a {
     bottom: -50px;
 }
 
-.slide__text {
+.slider__text {
     padding: 45px 0 0 110px;
 }
 
