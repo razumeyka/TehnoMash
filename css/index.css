@@ -62,7 +62,7 @@
 }
 
 body{
-    background: #f7f7f7;
+    background: #ffffff;
 	margin:0;
 	padding: 0;
 	font-family: 'ProximaNova', sans-serif;
@@ -811,7 +811,6 @@ header .sub-menu li a {
     width: 100%;
     font-size: 22px;
     font-weight: bold;
-    text-transform: uppercase;
     outline: none;
     padding: 0 30px;
 }
@@ -1490,6 +1489,152 @@ footer .menu li:first-child a {
     max-width: 905px;
     margin: 0 0 0 auto;
 }
+
+/*prices*/
+
+.steps__wrapper_prices {
+    max-width: 1230px;
+}
+
+.steps__background_prices {
+    background: url(../images/price_1-0.png) no-repeat center;
+    background-size: cover;
+    width: 940px;
+    height: 680px;
+    position: absolute;
+    right: -285px;
+    top: -50px;
+}
+
+.steps__inner_prices {
+    margin: 0 25px;
+}
+
+.steps_prices .steps__step {
+    margin-bottom: 25px;
+}
+
+.steps_prices .wpcf7-form-control-wrap {
+    width: 33.3333%;
+}
+
+.questionnaire {
+    background: #e5e5ed;
+    padding: 50px 0 60px;
+}
+
+.questionnaire__caption {
+    font: 700 48px "ProximaNovaCond";
+    text-align: center;
+}
+
+.questionnaire__caption-small {
+    font: 400 24px "ProximaNovaCond";
+    text-align: center;
+    margin: 7px 0 32px;   
+}
+
+.questionnaire__buttons {
+    margin: 0 -25px;
+}
+
+.questionnaire__item {
+    box-sizing: border-box;
+    width: 33.3333%;
+    padding: 0 25px;
+}
+
+.questionnaire__button {
+    width: 100%;
+    height: 90px;
+    padding: 20px 0 20px 90px;
+    text-transform: none;
+    position: relative;
+}
+
+.questionnaire__button .button__text1 {
+    font-size: 24px;
+}
+
+.questionnaire__button::after {
+    content: "";
+    background: rgb(66, 66, 161);
+    width: 1px;
+    height: 88px;
+    position: absolute;
+    top: 0;
+    left: 89px;
+}
+
+.questionnaire__button:before {
+    content: "";
+    background: url(../images/sprites.svg) no-repeat -7px -269px;
+    width: 87px;
+    height: 87px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.questionnaire__button_water:before {
+    background-position: -7px -269px;
+}
+
+.questionnaire__button_block:before {
+    background-position: -396px -269px;
+}
+
+.questionnaire__button_steam:before {
+    background-position: -265px -269px;
+}
+
+.leasing {
+    overflow: hidden;
+}
+
+.leasing .wrapper {
+    position: relative;
+}
+
+.leasing__photo {
+    background: url(../images/leasing-0.jpg) no-repeat center;
+    width: 650px;
+    height: 650px;
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+
+.leasing__info {
+    padding: 65px 0 80px 650px;
+}
+
+.leasing__caption {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+
+.leasing__partners{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.leasing__partner1 {
+    background: url(../images/leasing-1.jpg) no-repeat center;
+    width: 205px;
+    height: 40px;
+    margin-right: 25px;
+}
+
+.leasing__partner2 {
+    background: url(../images/leasing-2.jpg) no-repeat center;
+    width: 160px;
+    height: 40px;
+}
+
+
 
 
 
