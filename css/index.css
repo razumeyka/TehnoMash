@@ -70,7 +70,7 @@ body{
     font-weight: 400;
 	line-height:1.4;
     letter-spacing: 0.05em;
-    color: rgb(0, 0, 74);
+    color: rgb(0, 0, 0);
 	min-width: 360px;
 }
 
@@ -486,13 +486,14 @@ header .sub-menu li a {
 .information__caption {
     font-size: 48px;
     font-weight: 700;
+    color: rgb(0, 0, 74);
     margin: 0 0 25px;
 }
 
 .information__description {
     font-size: 20px;
-    color: rgb(0, 0, 0);
     line-height: 1.5;
+    margin-bottom: 23px;
 }
 
 .statistic__item {
@@ -508,11 +509,11 @@ header .sub-menu li a {
 
 .statistic__caption {
     font: 700 48px "ProximaNovaCond";
+    color: rgb(0, 0, 74);
 }
 
 .statistic__description {
     font-size: 18px;
-    color: rgb(0, 0, 0);
     margin: 5px 0;
     line-height: 1.5;
     letter-spacing: 0.1px;
@@ -608,6 +609,7 @@ header .sub-menu li a {
 .advantages__text {
     font-size: 18px;
     font-weight: 700;
+    color: rgb(0, 0, 74);
     text-align: center;
     line-height: 1.2;
     letter-spacing: 0.2px;
@@ -707,6 +709,7 @@ header .sub-menu li a {
 .steps__text {
     font-size: 20px;
     color: rgb(255, 255, 255);
+    letter-spacing: 0.8px;
     line-height: 1.3;
     margin: auto 0;
     flex: 1;
@@ -757,6 +760,7 @@ header .sub-menu li a {
  .steps__term {
     font-size: 15px;
     font-weight: 400;
+    color: rgb(0, 0, 74);
 }
 
 .steps__form {
@@ -826,7 +830,7 @@ header .sub-menu li a {
 .button_icon {
     position: relative;
     height: 70px;
-    padding: 12px 0 12px 75px;
+    padding: 0 0 0 75px;
 }
 
 .button_icon::after {
@@ -989,6 +993,10 @@ header .sub-menu li a {
 
 /*footer*/
 
+footer {
+    position: relative;
+}
+
 footer .first-footer {
     background: rgb(0,0,74);
     background-image: linear-gradient( 0deg, rgb(0,0,74) 0%, rgb(0,0,122) 100%);
@@ -1142,7 +1150,6 @@ footer .menu li:first-child a {
 
 .framed__description {
     font-size: 20px;
-    color: rgb(0, 0, 0);
     line-height: 1.5;
     margin-bottom: 30px;
 }
@@ -1222,11 +1229,11 @@ footer .menu li:first-child a {
 
 .banner__caption {
     font: 700 48px "ProximaNovaCond";
+    color: rgb(0, 0, 74);
 }
 
 .banner__description {
     font-size: 20px;
-    color: rgb(0, 0, 0);
     line-height: 1.5;
     margin: 10px 0 20px;
 }
@@ -1249,57 +1256,67 @@ footer .menu li:first-child a {
 }
 
 .banner__button {
+    display: flex;
     width: 53%;
+}
+
+.banner__button .button__text {
+    margin: auto;
 }
 
 /*product*/
 
-.inner-caption_product {
+.product {
+    background: url(../images/header-bg.jpg) no-repeat center;
+    background-size: cover;
     padding: 50px 0 120px;
+    margin-bottom: 40px;
 }
 
-.inner-caption .wrapper {
+.product .wrapper {
     position: relative;
 }
 
-.inner-caption__icon {
-	background: url(../images/sprites.svg) no-repeat -2px -266px rgb(0, 0, 81);
+.product__icon {
     width: 95px;
     height: 95px;
     border: 3px solid rgb(255, 255, 255);
 }
 
-.inner-caption h2 {
+.product__icon_water {
+    background: url(../images/sprites.svg) no-repeat 7px -203px rgb(0, 0, 81);
+    background-size: 800px;
+}
+
+.product__caption {
     font: 700 60px "ProximaNovaCond";
     color: rgb(255, 255, 255);
     line-height: 1;
-    max-width: 300px;
+    max-width: 500px;
     margin: 20px 0;
 }
 
-.inner-caption__small {
-    font: 800 28px "ProximaNovaCond";
+.product__caption-small {
+    font: 700 28px "ProximaNovaCond";
     color: rgb(255, 255, 255);
-    max-width: 300px;
+    max-width: 500px;
 }
 
-.inner-caption__photo_water {
-    background: url(../images/product_1-0.png) no-repeat center;
-    background-size: cover;
+.product__photo {
     width: 910px;
     height: 790px;
     position: absolute;
-    bottom: -411px;
+    top: -50px;
     right: -27px;
 }
 
-.inner-page_product {
-    padding: 40px 0 0;
+.product__photo_water {
+    background: url(../images/product_1-0.png) no-repeat center;
+    background-size: cover;
 }
 
 .description {
     font-size: 20px;
-    color: rgb(0,0,0);
     letter-spacing: 0.1px;
     line-height: 1.5;
     max-width: 600px;
@@ -1311,35 +1328,47 @@ footer .menu li:first-child a {
     font-weight: 700;
 }
 
-.inner-page__types {
-    margin-top: 50px;
-}
-
-.types__type {
-    font: 400 20px "ProximaNovaCond";
-    letter-spacing: 0.1px;
-    border-bottom: 1px dashed rgb(0, 0, 74);
-    cursor: pointer;
-    height: fit-content;
-    margin: auto 35px auto 0;
-}
-
-.types__type_active {
-    background: rgb(255,255,255);
-    font-size: 24px;
-    font-weight: 700;
-    box-sizing: border-box;
-    padding: 8px 18px;
-    border: 2px solid rgb(0, 0, 74);
-    position: relative;
-    z-index: 1;
-}
-
 .slider {
     width: 100%;
     position: relative;
     overflow: hidden;
-    padding-bottom: 40px;
+    padding: 25px 0 40px;
+}
+
+.slider__item {
+    font: 400 20px "ProximaNovaCond";
+    letter-spacing: 0.1px;
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+    margin: auto 35px auto 0;
+    position: relative;
+}
+
+.slider__item::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    border-bottom: 2px dashed rgb(0, 0, 74);
+    position: absolute;
+    bottom: 12px;
+}
+
+.slider__item_active {
+    background: rgb(255,255,255);
+    font-size: 24px;
+    line-height: 46px;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 0 18px;
+    border: 2px solid rgb(0, 0, 74);
+    position: relative;
+    z-index: 1;
+    cursor: auto;
+}
+
+.slider__item_active::before {
+    display: none;
 }
 
 .slider__inner {
@@ -1349,6 +1378,9 @@ footer .menu li:first-child a {
     left: 0;
     margin: 0;
     padding: 0;
+    transition: all 0.3s linear 0s;
+    -webkit-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
 }
 
 .slider__slide {
@@ -1414,57 +1446,70 @@ footer .menu li:first-child a {
     padding: 45px 0 0 110px;
 }
 
-.fuel {
+.list-info {
     background: #ececec;
     padding: 40px 0 73px;
     overflow: hidden;
 }
 
-.fuel__icon {
-    background: url(../images/fuel.svg) no-repeat 6px 7px rgb(255,255,255);
+.list-info__icon {
     width: 70px;
     height: 70px;
     border: 5px solid rgb(0, 0, 74);
     margin-right: 20px;
 }
 
-.fuel__caption {
+.list-info__icon_fuel {
+    background: url(../images/fuel.svg) no-repeat 6px 7px rgb(255,255,255);
+}
+
+.list-info__caption {
     font: 700 42px "ProximaNovaCond";
+    color: rgb(0, 0, 74);
     margin: auto 0;
 }
 
-.fuel__list {
+.list-info__list {
     margin: 25px -25px 0;
 }
 
-.fuel__item {
+.list-info__item {
     width: 25%;
     box-sizing: border-box;
     padding: 0 25px;
 }
 
-.fuel__square {
-    display: flex;
+.list-info__small-caption {
+    font: 700 24px "ProximaNovaCond";
+    color: rgb(0, 0, 74);
+    padding-left: 30px;
+    position: relative;
+}
+
+.list-info__small-caption::before {
+    content: "";
     border: 2px solid rgb(219, 28, 28);
     background-color: rgb(255, 255, 255);
     width: 12px;
     height: 12px;
-    margin: auto 13px auto 0;
+    position: absolute;
+    left: 0;
+    top: 5px;
 }
 
-.fuel__square-small {
+.list-info__small-caption::after {
+    content: "";
     background: rgb(0,0,74);
     width: 6px;
     height: 6px;
-    margin: auto;
+    position: absolute;
+    left: 5px;
+    top: 10px;
 }
 
-.fuel__small-caption {
-    font: 700 24px "ProximaNovaCond";
-}
-
-.fuel__description {
+.list-info__description {
     font-size: 18px;
+    color: rgb(0, 0, 74);
     margin-top: 12px;
 }
 
@@ -1506,12 +1551,22 @@ footer .menu li:first-child a {
     top: -50px;
 }
 
+.steps__caption_prices {
+    max-width: 1110px;
+    margin: 0 auto 30px auto;
+}
+
 .steps__inner_prices {
-    margin: 0 25px;
+    max-width: 1155px;
+    margin: 0 auto;
 }
 
 .steps_prices .steps__step {
-    margin-bottom: 25px;
+    margin-bottom: 32px;
+}
+
+.steps__form_prices {
+    margin-top: 60px;
 }
 
 .steps_prices .wpcf7-form-control-wrap {
@@ -1525,11 +1580,13 @@ footer .menu li:first-child a {
 
 .questionnaire__caption {
     font: 700 48px "ProximaNovaCond";
+    color: rgb(0, 0, 74);
     text-align: center;
 }
 
 .questionnaire__caption-small {
     font: 400 24px "ProximaNovaCond";
+    color: rgb(0, 0, 74);
     text-align: center;
     margin: 7px 0 32px;   
 }
@@ -1545,11 +1602,16 @@ footer .menu li:first-child a {
 }
 
 .questionnaire__button {
+    display: flex;
     width: 100%;
     height: 90px;
-    padding: 20px 0 20px 90px;
+    padding: 0 0 0 90px;
     text-transform: none;
     position: relative;
+}
+
+.questionnaire__button .button__text {
+    margin: auto;
 }
 
 .questionnaire__button .button__text1 {
@@ -1577,15 +1639,18 @@ footer .menu li:first-child a {
 }
 
 .questionnaire__button_water:before {
-    background-position: -7px -269px;
+    background-position: 4px -203px;
+    background-size: 787px;
 }
 
 .questionnaire__button_block:before {
-    background-position: -396px -269px;
+    background-position: -304px -203px;
+    background-size: 787px;
 }
 
 .questionnaire__button_steam:before {
-    background-position: -265px -269px;
+    background-position: -199px -203px;
+    background-size: 787px;
 }
 
 .leasing {
@@ -1598,37 +1663,29 @@ footer .menu li:first-child a {
 
 .leasing__photo {
     background: url(../images/leasing-0.jpg) no-repeat center;
-    width: 650px;
-    height: 650px;
-    position: absolute;
-    left: 20px;
-    top: 0;
+    background-size: 100% auto;
+    width: 51%;
 }
 
 .leasing__info {
-    padding: 65px 0 80px 650px;
+    flex: 1;
+    padding: 65px 0 80px 20px;
 }
 
-.leasing__caption {
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 23px;
-}
-
-.leasing__partners{
+.information__partners {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.leasing__partner1 {
+.information__partner1 {
     background: url(../images/leasing-1.jpg) no-repeat center;
     width: 205px;
     height: 40px;
     margin-right: 25px;
 }
 
-.leasing__partner2 {
+.information__partner2 {
     background: url(../images/leasing-2.jpg) no-repeat center;
     width: 160px;
     height: 40px;
@@ -1970,7 +2027,7 @@ footer .menu li:first-child a {
     }
     
     .button_icon {
-        padding: 12px 10px;
+        padding: 0 10px;
     }
     
     .button_icon::after, .button_icon::before  {

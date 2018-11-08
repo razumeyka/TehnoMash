@@ -62,12 +62,12 @@ $(document).ready(function(){
 // product-slider
         
     var navBtnId = 0;    
-    $('.types__type').click(function() {
-        $('.types__type').removeClass('types__type_active');
+    $('.slider__item').click(function() {
+        $('.slider__item').removeClass('slider__item_active');
         navBtnId = $(this).index();
             $('.slider__inner').css(
                 'margin-left','-'+navBtnId+'00%'); 
-        $(this).addClass('types__type_active');
+        $(this).addClass('slider__item_active');
     });
     
 });
