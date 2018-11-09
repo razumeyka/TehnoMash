@@ -760,7 +760,6 @@ header .sub-menu li a {
  .steps__term {
     font-size: 15px;
     font-weight: 400;
-    color: rgb(0, 0, 74);
 }
 
 .steps__form {
@@ -1364,7 +1363,7 @@ footer .menu li:first-child a {
     border: 2px solid rgb(0, 0, 74);
     position: relative;
     z-index: 1;
-    cursor: auto;
+    cursor: default;
 }
 
 .slider__item_active::before {
@@ -1373,7 +1372,7 @@ footer .menu li:first-child a {
 
 .slider__inner {
     position: relative;
-    width: 500%;
+    width: 300%;
     top: 0;
     left: 0;
     margin: 0;
@@ -1384,7 +1383,7 @@ footer .menu li:first-child a {
 }
 
 .slider__slide {
-    width: 20%;
+    width: 33.3333%;
     display: inline;
     float: left;
     overflow: hidden;
@@ -1494,7 +1493,7 @@ footer .menu li:first-child a {
     height: 12px;
     position: absolute;
     left: 0;
-    top: 5px;
+    top: 6px;
 }
 
 .list-info__small-caption::after {
@@ -1504,7 +1503,7 @@ footer .menu li:first-child a {
     height: 6px;
     position: absolute;
     left: 5px;
-    top: 10px;
+    top: 11px;
 }
 
 .list-info__description {
@@ -1538,7 +1537,7 @@ footer .menu li:first-child a {
 /*prices*/
 
 .steps__wrapper_prices {
-    max-width: 1230px;
+    max-width: 1110px;
 }
 
 .steps__background_prices {
@@ -1547,18 +1546,12 @@ footer .menu li:first-child a {
     width: 940px;
     height: 680px;
     position: absolute;
-    right: -285px;
+    right: -345px;
     top: -50px;
 }
 
 .steps__caption_prices {
-    max-width: 1110px;
-    margin: 0 auto 30px auto;
-}
-
-.steps__inner_prices {
-    max-width: 1155px;
-    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .steps_prices .steps__step {
@@ -1690,10 +1683,6 @@ footer .menu li:first-child a {
     width: 160px;
     height: 40px;
 }
-
-
-
-
 
 /*media*/
 
@@ -1867,6 +1856,53 @@ footer .menu li:first-child a {
     .plant-page-details {
         padding: 30px 0 0;
     }
+    
+    .steps__background_prices {
+        display: none;
+    }
+    
+    .steps__group_prices {
+        width: 100%;
+    }
+    
+    .steps__form_prices .wpcf7-form-control-wrap {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .product__photo {
+        display: none;
+    }
+    
+    .product__icon {
+        margin: 0 auto;
+    }
+    
+    .product__caption, .product__caption-small {
+        max-width: none;
+        text-align: center;
+    }
+    
+    .slider__nav {
+        display: none;
+    }
+    
+    .slider__inner {
+        width: 100%;
+    }
+    
+    .slider__slide {
+        width: 100%;
+        float: none;
+    }
+    
+    .project__photo {
+        display: none;
+    }
+    
+    .project__banner {
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -1945,6 +1981,45 @@ footer .menu li:first-child a {
     .documents__photo {
         display: none;
     }
+    
+    .documents__information {
+        padding: 62px 0 80px;
+    }
+    
+    .questionnaire__buttons {
+        margin: 0px;
+    }
+    
+    .questionnaire__item {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 0;
+    }
+    
+    .leasing__photo {
+        display: none;
+    }
+    
+    .leasing__info {
+        padding: 65px 0 80px;
+    }
+    
+    .slider__wrapper {
+        flex-direction: column;
+    }
+    
+    .slider__text {
+        padding: 80px 0;
+    }
+    
+    .description {
+        max-width: none;
+    }
+    
+    .list-info__item {
+        width: 50%;
+        padding: 15px 25px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -2006,6 +2081,11 @@ footer .menu li:first-child a {
         width: 100%;
         margin-top: 20px;
     }
+    
+    .wpcf7-form-control-wrap {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (max-width: 639px) {
@@ -2051,6 +2131,10 @@ footer .menu li:first-child a {
     .third-footer .wrapper {
         flex-direction: column;
         text-align: center;
+    }
+    
+    .list-info__item {
+        width: 100%;
     }
 }
 
