@@ -1699,6 +1699,10 @@ footer .menu li:first-child a {
         padding: 0 15px;
     }
     
+    .slider__wrapper {
+        padding: 0 15px;
+    }
+    
     header .wrapper {
         flex-direction: column
     }
@@ -1865,11 +1869,6 @@ footer .menu li:first-child a {
         width: 100%;
     }
     
-    .steps__form_prices .wpcf7-form-control-wrap {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    
     .product__photo {
         display: none;
     }
@@ -2008,8 +2007,19 @@ footer .menu li:first-child a {
         flex-direction: column;
     }
     
+    .slider__photo_one, .slider__photo_two {
+        display: none;
+    }
+    
+    .slider__photo_three {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    
     .slider__text {
-        padding: 80px 0;
+        padding: 50px 0;
     }
     
     .description {
@@ -2085,6 +2095,10 @@ footer .menu li:first-child a {
     .wpcf7-form-control-wrap {
         width: 100%;
         margin-bottom: 15px;
+    }
+    
+    .slider__photo_three {
+        width: 100%;
     }
 }
 
