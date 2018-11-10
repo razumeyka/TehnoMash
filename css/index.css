@@ -1282,7 +1282,7 @@ footer .menu li:first-child a {
     border: 3px solid rgb(255, 255, 255);
 }
 
-.product__icon_water {
+.product__icon_water_boilers {
     background: url(../images/sprites.svg) no-repeat 7px -203px rgb(0, 0, 81);
     background-size: 800px;
 }
