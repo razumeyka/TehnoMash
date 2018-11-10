@@ -12,6 +12,7 @@ $(document).ready(function(){
   
     $('.menu li.menu-item-has-children>a').click(function(e){
 		e.preventDefault();
+		if(window.innerWidth>1279)return ;
 		$('.sub-menu').not($(this).closest('li').find('.sub-menu')).slideUp('300');
 		$(this).closest('li').find('.sub-menu').slideToggle('300');
     }); 
