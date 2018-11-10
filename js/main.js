@@ -9,10 +9,6 @@ $(document).ready(function(){
 
 // sub-menu 
 
-     $('.menu li').click(function(e){
-        e.preventDefault();
-        $(this).find('.sub-menu').slideToggle(300);
-    });  
   
     $('.menu li.menu-item-has-children>a').click(function(e){
 		e.preventDefault();
@@ -57,7 +53,7 @@ $(document).ready(function(){
     
 // mask
     
-    $(".wpcf7-tel").mask("8(999) 999-99-99");
+    $(".wpcf7-tel").mask("8 (999) 999-99-99");
     
 // product-slider
         
