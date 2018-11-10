@@ -1631,17 +1631,17 @@ footer .menu li:first-child a {
     top: 0;
 }
 
-.questionnaire__button_water:before {
+.questionnaire__button_water_boilers:before {
     background-position: 4px -203px;
     background-size: 787px;
 }
 
-.questionnaire__button_block:before {
+.questionnaire__button_block_thermal_points:before {
     background-position: -304px -203px;
     background-size: 787px;
 }
 
-.questionnaire__button_steam:before {
+.questionnaire__button_steam_boilers:before {
     background-position: -199px -203px;
     background-size: 787px;
 }
