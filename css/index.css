@@ -1282,7 +1282,7 @@ footer .menu li:first-child a {
     border: 3px solid rgb(255, 255, 255);
 }
 
-.product__icon_water {
+.product__icon_water_boilers {
     background: url(../images/sprites.svg) no-repeat 7px -203px rgb(0, 0, 81);
     background-size: 800px;
 }
@@ -1631,17 +1631,17 @@ footer .menu li:first-child a {
     top: 0;
 }
 
-.questionnaires__button_water:before {
+.questionnaires__button_water_boilers:before {
     background-position: 4px -203px;
     background-size: 787px;
 }
 
-.questionnaires__button_block:before {
+.questionnaires__button_block_thermal_points:before {
     background-position: -304px -203px;
     background-size: 787px;
 }
 
-.questionnaires__button_steam:before {
+.questionnaires__button_steam_boilers:before {
     background-position: -199px -203px;
     background-size: 787px;
 }
