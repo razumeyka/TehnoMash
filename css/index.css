@@ -1102,13 +1102,13 @@ footer .menu li:first-child a {
 
 /*inner-caption*/
 
-.inner-headline {
+.inner-caption {
     background: url(../images/header-bg.jpg) no-repeat center;
     background-size: cover;
     padding: 35px 0;
 }
 
-.inner-headline__caption {
+.inner-caption h1 {
     font: 700 66px  "ProximaNovaCond";
     color: rgb(255, 255, 255);
 }
