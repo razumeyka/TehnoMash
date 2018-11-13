@@ -315,7 +315,7 @@ header .sub-menu li a {
 }
 
 .kenburn-slider .small-caption {
-    font: 70 36px "ProximaNovaCond";
+    font: 700 36px "ProximaNovaCond";
     color: rgb(255, 255, 255);
     text-align: center;
     position: relative;
@@ -1108,13 +1108,13 @@ footer .menu li:first-child a {
 
 /*inner-caption*/
 
-.inner-caption {
+.inner-headline {
     background: url(../images/header-bg.jpg) no-repeat center;
     background-size: cover;
     padding: 35px 0;
 }
 
-.inner-caption h1 {
+.inner-headline__caption {
     font: 700 66px  "ProximaNovaCond";
     color: rgb(255, 255, 255);
 }
@@ -1566,35 +1566,35 @@ footer .menu li:first-child a {
     width: 33.3333%;
 }
 
-.questionnaire {
+.questionnaires {
     background: #e5e5ed;
     padding: 50px 0 60px;
 }
 
-.questionnaire__caption {
+.questionnaires__caption {
     font: 700 48px "ProximaNovaCond";
     color: rgb(0, 0, 74);
     text-align: center;
 }
 
-.questionnaire__caption-small {
+.questionnaires__caption-small {
     font: 400 24px "ProximaNovaCond";
     color: rgb(0, 0, 74);
     text-align: center;
     margin: 7px 0 32px;   
 }
 
-.questionnaire__buttons {
+.questionnaires__buttons {
     margin: 0 -25px;
 }
 
-.questionnaire__item {
+.questionnaires__item {
     box-sizing: border-box;
     width: 33.3333%;
     padding: 0 25px;
 }
 
-.questionnaire__button {
+.questionnaires__button {
     display: flex;
     width: 100%;
     height: 90px;
@@ -1603,15 +1603,15 @@ footer .menu li:first-child a {
     position: relative;
 }
 
-.questionnaire__button .button__text {
+.questionnaires__button .button__text {
     margin: auto;
 }
 
-.questionnaire__button .button__text1 {
+.questionnaires__button .button__text1 {
     font-size: 24px;
 }
 
-.questionnaire__button::after {
+.questionnaires__button::after {
     content: "";
     background: rgb(66, 66, 161);
     width: 1px;
@@ -1621,7 +1621,7 @@ footer .menu li:first-child a {
     left: 89px;
 }
 
-.questionnaire__button:before {
+.questionnaires__button:before {
     content: "";
     background: url(../images/sprites.svg) no-repeat -7px -269px;
     width: 87px;
@@ -1631,17 +1631,17 @@ footer .menu li:first-child a {
     top: 0;
 }
 
-.questionnaire__button_water:before {
+.questionnaires__button_water:before {
     background-position: 4px -203px;
     background-size: 787px;
 }
 
-.questionnaire__button_block:before {
+.questionnaires__button_block:before {
     background-position: -304px -203px;
     background-size: 787px;
 }
 
-.questionnaire__button_steam:before {
+.questionnaires__button_steam:before {
     background-position: -199px -203px;
     background-size: 787px;
 }
@@ -1683,6 +1683,281 @@ footer .menu li:first-child a {
     width: 160px;
     height: 40px;
 }
+
+/*questionnaire*/
+
+.inner-headline__caption-small {
+    font: 700 28px "ProximaNovaCond";
+    color: rgb(255, 255, 255);
+}
+
+.questionnaire {
+    padding: 50px 0;
+}
+
+.questionnaire__group {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+.questionnaire__caption {
+    background-color: rgb(0, 0, 74);
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    padding: 10px 40px;
+}
+
+.questionnaire__item {
+    padding: 15px 40px 0;
+}
+
+.questionnaire__item:nth-child(odd) {
+    background: #f5f5f5;
+}
+
+.questionnaire__item-caption {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(0, 0, 74);
+    text-transform: uppercase;
+}
+
+.questionnaire__fields {
+    margin: 0 -25px;
+}
+
+.questionnaire__field-wr {
+    box-sizing: border-box;
+    width: 25%;
+    padding: 0 25px;
+    margin: 10px 0;
+}
+
+.questionnaire__field {
+    width: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.questionnaire__field_double {
+    width: 40%;
+}
+
+.questionnaire__field_input:before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: rgb(0, 0, 74);
+    -webkit-transition: width 0.2s ease-in 0s;
+    transition: width 0.2s ease-in 0s;
+}
+
+.questionnaire__field_active:before {
+    width: 100%;
+}
+
+.questionnaire__field .wpcf7-form-control {
+    border: none;
+    border-bottom: 2px solid rgb(198, 198, 198);
+    box-shadow: none;
+    background: rgb(255,255,255);
+    height: auto;
+    padding: 0 0 5px;
+    font-size: 18px;  
+    font-weight: 400;
+}
+
+.questionnaire__field_changed .wpcf7-form-control {
+    border-bottom: 2px solid rgb(0, 0, 74);
+}
+
+.questionnaire__item:nth-child(odd) .wpcf7-form-control {
+    background: #f5f5f5;
+}
+
+.questionnaire__label {
+    font-size: 12px;
+    letter-spacing: 0.1px;
+} 
+
+.select {
+    box-sizing: border-box;
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 2px;
+    position: relative;
+}
+
+.select_changed, .select.active  {
+    border: 2px solid rgb(0, 0, 74);
+}
+
+.select__field {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.select .select__field:before{
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 10px;
+    background: url(../images/sprites.svg) -1px -1px red;
+    top: 15px;
+    right: 6px;
+    -webkit-transition: all 0.5s linear 0s;
+    -moz-transition: all 0.5s linear 0s;
+    -o-transition: all 0.5s linear 0s;
+    transition: all 0.5s linear 0s;
+}
+
+.select.active .select__field:before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.select ul {
+    display: none;
+    background: rgb(255,255,255);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid rgb(214, 207, 196);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+    top: 50px;
+    left: 0;
+    z-index: 1;
+}
+
+.select.active ul {
+	display:block;
+}
+
+.select ul li {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 20px;
+    cursor: default;
+}
+
+.select ul li:hover {
+    background-color: #ebebeb;
+}
+
+.questionnaire__field_checkbox {
+    display: block;
+    box-sizing: border-box;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    padding: 10px 30px 10px 25px;
+}
+
+.questionnaire__field_checkbox::before {
+    content: "";
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 2px;
+    background: rgb(255, 255, 255);
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    top: 13px;
+}
+
+.questionnaire__field_checkbox.questionnaire__field_changed::before {
+    background: rgb(0, 0, 74);
+}
+
+.questionnaire__fields_additional {
+    margin: 0 -15px;
+}
+
+.questionnaire__field-wr_textarea {
+    width: 75%;
+    padding: 0 15px;
+}
+
+.questionnaire__field-wr_textarea .wpcf7-form-control {
+    border: 2px solid rgb(187, 187, 187);
+    height: 90px;
+    padding: 15px 20px;
+}
+
+.questionnaire__field-wr_file {
+    padding: 0 15px;
+}
+
+.questionnaire__field-wr_file .questionnaire__field {
+    border: 2px dashed rgb(187, 187, 187);
+    height: 90px;
+    font-size: 18px;
+    color: rgb(0, 0, 74);
+    font-weight: 700;
+    line-height: 90px;
+    padding-left: 73px;
+}
+
+.questionnaire__field-wr_file .questionnaire__field::before {
+    content: "";
+    background: red;
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    top: 8px;
+    left: 13px;
+}
+
+input[type="file"], input[type="checkbox"] {
+    display: none;
+}
+
+.questionnaire__button-block {
+    box-sizing: border-box;
+    border: 7px solid rgb(0, 0, 74);
+    width: 100%;
+    height: 195px;
+    position: relative;
+}
+
+.questionnaire__button-block:before {
+    content: "";
+    background: red;
+    width: 100px;
+    height: 97px;
+    position: absolute;
+    top: -47px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.questionnaire__field_button {
+    margin: auto;
+    width: auto;
+}
+
+.questionnaire__button {
+    height: 70px;
+    padding: 0 60px;
+}
+
+
+
 
 /*media*/
 
@@ -1902,6 +2177,14 @@ footer .menu li:first-child a {
     .project__banner {
         margin: 0 auto;
     }
+    
+    .questionnaire__field-wr {
+        width: 33.3333%;
+    }
+    
+    .questionnaire__field-wr_textarea , .questionnaire__field-wr_file {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -1985,11 +2268,11 @@ footer .menu li:first-child a {
         padding: 62px 0 80px;
     }
     
-    .questionnaire__buttons {
+    .questionnaires__buttons {
         margin: 0px;
     }
     
-    .questionnaire__item {
+    .questionnaires__item {
         width: 100%;
         margin-bottom: 15px;
         padding: 0;
@@ -2029,6 +2312,10 @@ footer .menu li:first-child a {
     .list-info__item {
         width: 50%;
         padding: 15px 25px;
+    }
+    
+    .questionnaire__field-wr {
+        width: 50%;
     }
 }
 
@@ -2100,6 +2387,11 @@ footer .menu li:first-child a {
     .slider__photo_three {
         width: 100%;
     }
+    
+    .questionnaire__field_button {
+        margin: auto;
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 639px) {
@@ -2148,6 +2440,10 @@ footer .menu li:first-child a {
     }
     
     .list-info__item {
+        width: 100%;
+    }
+    
+    .questionnaire__field-wr {
         width: 100%;
     }
 }

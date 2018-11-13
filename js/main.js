@@ -65,9 +65,39 @@ $(document).ready(function(){
     $('.slider__item').click(function() {
         $('.slider__item').removeClass('slider__item_active');
         navBtnId = $(this).index();
-            $('.slider__inner').css(
-                'margin-left','-'+navBtnId+'00%'); 
+        $('.slider__inner').css('margin-left','-'+navBtnId+'00%'); 
         $(this).addClass('slider__item_active');
     });
+    
+// select 
+        
+    	$('.select .select__field').click(function(){
+		$('.select').not($(this).closest('.select')).removeClass('active');
+		$(this).parent().toggleClass('active');
+	})
+	
+	$('.select li').click(function(){
+		$(this).closest('.select').find('input').val($(this).data('value'));
+		$(this).closest('.select').find('.select__field').html($(this).html());
+		$(this).closest('.select').toggleClass('active').addClass('select_changed');
+	})
+    
+// checkbox
+
+    
+// input-border
+    
+    $('.questionnaire__field_input').focusin(function() {       
+        $(this).addClass('questionnaire__field_active');
+    });
+    
+    $('.questionnaire__field_input').focusout(function() {     
+        $(this).removeClass('questionnaire__field_active');
+    });
+    
+    $('.questionnaire__field').change(function() {       
+        $(this).addClass('questionnaire__field_changed');
+    });
+    
     
 });
