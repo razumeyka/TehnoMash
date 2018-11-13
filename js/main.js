@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+$('.fancybox').fancybox();
 //mobile_menu
     
     $('.burger').click( function() { 
@@ -38,13 +38,11 @@ $(document).ready(function(){
     });
     
 // animation   
-    
-    if ( window.innerWidth > 1023 ) {
-        $('.advantages').viewportChecker({
-            classToAdd: 'advantages_visible',
-            offset: 10
-        });
-    }
+     
+	$('.advantages').viewportChecker({
+		classToAdd: 'advantages_visible',
+		offset: 10
+	}); 
 
 	$('.steps').viewportChecker({
 		classToAdd: 'steps_visible',
