@@ -1707,6 +1707,10 @@ footer .menu li:first-child a {
     padding: 50px 0;
 }
 
+.questionnaire .wpcf7-form {
+    margin: 0;
+}
+
 .questionnaire__group {
     box-sizing: border-box;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
@@ -1716,12 +1720,13 @@ footer .menu li:first-child a {
 .questionnaire__caption {
     background-color: rgb(0, 0, 74);
     font-size: 24px;
+    line-height: 1;
     color: rgb(255, 255, 255);
     padding: 10px 40px;
 }
 
 .questionnaire__item {
-    padding: 15px 40px 0;
+    padding: 15px 40px;
 }
 
 .questionnaire__item:nth-child(odd) {
@@ -1742,8 +1747,9 @@ footer .menu li:first-child a {
 .questionnaire__field-wr {
     box-sizing: border-box;
     width: 25%;
-    padding: 0 25px;
-    margin: 10px 0;
+    font-size: 0;    
+    line-height: 0;
+    padding: 10px 25px;
 }
 
 .questionnaire__field {
@@ -1759,7 +1765,7 @@ footer .menu li:first-child a {
 .questionnaire__field_input:before {
     content: '';
     position: absolute;
-    bottom: 0px;
+    bottom: -7px;
     left: 0;
     width: 0;
     height: 3px;
@@ -1774,17 +1780,14 @@ footer .menu li:first-child a {
 
 .questionnaire__field .wpcf7-form-control {
     border: none;
-    border-bottom: 2px solid rgb(198, 198, 198);
+    border-radius: unset;
     box-shadow: none;
     background: rgb(255,255,255);
-    height: auto;
-    padding: 0 0 5px;
-    font-size: 18px;  
+    height: 20px;
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
     font-weight: 400;
-}
-
-.questionnaire__field_changed .wpcf7-form-control {
-    border-bottom: 2px solid rgb(0, 0, 74);
 }
 
 .questionnaire__item:nth-child(odd) .wpcf7-form-control {
@@ -1792,9 +1795,18 @@ footer .menu li:first-child a {
 }
 
 .questionnaire__label {
+    display: block;
+    box-sizing: border-box;
+    border-top: 2px solid rgb(198, 198, 198);
     font-size: 12px;
+    line-height: 1;
     letter-spacing: 0.1px;
-} 
+    padding-top: 5px;
+}
+
+.questionnaire__field-wr_changed .questionnaire__label {
+    border-top: 2px solid rgb(0, 0, 74);
+}
 
 .select {
     box-sizing: border-box;
@@ -1808,10 +1820,12 @@ footer .menu li:first-child a {
 }
 
 .select__field {
+    background: rgb(255,255,255);
     height: 40px;
     line-height: 40px;
     font-size: 16px;
-    padding: 0 10px;
+    padding: 0 15px;
+    cursor: default;
 }
 
 .select .select__field:before{
@@ -1822,10 +1836,7 @@ footer .menu li:first-child a {
     background: url(../images/sprites.svg) -1px -1px red;
     top: 15px;
     right: 6px;
-    -webkit-transition: all 0.5s linear 0s;
-    -moz-transition: all 0.5s linear 0s;
-    -o-transition: all 0.5s linear 0s;
-    transition: all 0.5s linear 0s;
+    transition: all 0.2s linear 0s;
 }
 
 .select.active .select__field:before {
@@ -1852,10 +1863,6 @@ footer .menu li:first-child a {
     z-index: 1;
 }
 
-.select.active ul {
-	display:block;
-}
-
 .select ul li {
     display: block;
     box-sizing: border-box;
@@ -1876,7 +1883,7 @@ footer .menu li:first-child a {
     box-sizing: border-box;
     font-size: 16px;
     letter-spacing: 0.1px;
-    padding: 10px 30px 10px 25px;
+    padding: 10px 30px 0 25px;
 }
 
 .questionnaire__field_checkbox::before {
@@ -1884,14 +1891,14 @@ footer .menu li:first-child a {
     border: 2px solid rgb(187, 187, 187);
     border-radius: 2px;
     background: rgb(255, 255, 255);
-    width: 12px;
-    height: 12px;
+    width: 13px;
+    height: 13px;
     position: absolute;
     left: 0;
     top: 13px;
 }
 
-.questionnaire__field_checkbox.questionnaire__field_changed::before {
+.questionnaire__checkbox.changed .questionnaire__field_checkbox::before {
     background: rgb(0, 0, 74);
 }
 
@@ -1907,6 +1914,7 @@ footer .menu li:first-child a {
 .questionnaire__field-wr_textarea .wpcf7-form-control {
     border: 2px solid rgb(187, 187, 187);
     height: 90px;
+    resize: vertical;
     padding: 15px 20px;
 }
 
@@ -1920,8 +1928,9 @@ footer .menu li:first-child a {
     font-size: 18px;
     color: rgb(0, 0, 74);
     font-weight: 700;
-    line-height: 90px;
     padding-left: 73px;
+    display: flex;
+    overflow: hidden;
 }
 
 .questionnaire__field-wr_file .questionnaire__field::before {
@@ -1936,6 +1945,11 @@ footer .menu li:first-child a {
 
 input[type="file"], input[type="checkbox"] {
     display: none;
+}
+
+.questionnaire__field-wr_file .questionnaire__field span {
+    line-height: 1.4;
+    margin: auto 0;
 }
 
 .questionnaire__button-block {
