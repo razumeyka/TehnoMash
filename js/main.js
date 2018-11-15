@@ -79,11 +79,11 @@ $(document).ready(function(){
       
 // input-border
     
-    $('.questionnaire__field_input').focusin(function() {       
+    $('.questionnaire__field').focusin(function() {       
         $(this).addClass('questionnaire__field_active');
     });
     
-    $('.questionnaire__field_input').focusout(function() {     
+    $('.questionnaire__field').focusout(function() {     
         $(this).removeClass('questionnaire__field_active');
     });
     
