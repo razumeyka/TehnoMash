@@ -44,10 +44,15 @@ $(document).ready(function(){
 		offset: 10
 	}); 
 
-	$('.steps').viewportChecker({
-		classToAdd: 'steps_visible',
-		offset: 50
+	$('.steps__illustrated').viewportChecker({
+		classToAdd: 'steps__illustrated_visible',
+		offset: 150
 	});
+	
+	$('.plant').viewportChecker({
+		classToAdd: 'plant_visible',
+		offset: 300
+	})
 
 // mask
     
@@ -59,7 +64,8 @@ $(document).ready(function(){
     $('.slider__item').click(function() {
         $('.slider__item').removeClass('slider__item_active');
         navBtnId = $(this).index();
-        $('.slider__inner').css('margin-left','-'+navBtnId+'00%'); 
+            $('.slider__inner').css(
+                'margin-left','-'+navBtnId+'00%'); 
         $(this).addClass('slider__item_active');
     });
     
@@ -115,4 +121,5 @@ $(document).ready(function(){
 	});
     
     
+
 });
